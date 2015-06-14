@@ -1,0 +1,2022 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'body-parser' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 silly cache add args [ 'body-parser', null ]
+5 verbose cache add spec body-parser
+6 silly cache add parsed spec { raw: 'body-parser',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'body-parser',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed body-parser@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'body-parser', range: '*', hasData: false }
+11 silly mapToRegistry name body-parser
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+15 verbose addNameRange registry:https://registry.npmjs.org/body-parser not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/body-parser
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 2:25:30 PM
+19 verbose request id 7945152a9b38651a
+20 verbose etag "2Z3MRRW3UTD2PGDGVXU6ZKF4D"
+21 http request GET https://registry.npmjs.org/body-parser
+22 http 200 https://registry.npmjs.org/body-parser
+23 silly get cb [ 200,
+23 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"B7E8XGHXGHIJT3Q75QCN8YEC2"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '95500',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Thu, 07 May 2015 18:25:28 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '11',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-iad2137-IAD',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1431023128.917421,VS0,VE1',
+23 silly get     vary: 'Accept' } ]
+24 verbose get saving body-parser to /Users/davidjokinen/.npm/registry.npmjs.org/body-parser/.cache.json
+25 silly addNameRange number 2 { name: 'body-parser', range: '*', hasData: true }
+26 silly addNameRange versions [ 'body-parser',
+26 silly addNameRange   [ '1.0.0',
+26 silly addNameRange     '1.0.1',
+26 silly addNameRange     '1.0.2',
+26 silly addNameRange     '1.1.0',
+26 silly addNameRange     '1.1.1',
+26 silly addNameRange     '1.1.2',
+26 silly addNameRange     '1.2.0',
+26 silly addNameRange     '1.2.1',
+26 silly addNameRange     '1.2.2',
+26 silly addNameRange     '1.3.0',
+26 silly addNameRange     '1.3.1',
+26 silly addNameRange     '1.4.0',
+26 silly addNameRange     '1.4.1',
+26 silly addNameRange     '1.4.2',
+26 silly addNameRange     '1.4.3',
+26 silly addNameRange     '1.5.0',
+26 silly addNameRange     '1.5.1',
+26 silly addNameRange     '1.5.2',
+26 silly addNameRange     '1.6.0',
+26 silly addNameRange     '1.6.1',
+26 silly addNameRange     '1.6.2',
+26 silly addNameRange     '1.6.3',
+26 silly addNameRange     '1.6.4',
+26 silly addNameRange     '1.6.5',
+26 silly addNameRange     '1.6.6',
+26 silly addNameRange     '1.6.7',
+26 silly addNameRange     '1.7.0',
+26 silly addNameRange     '1.8.0',
+26 silly addNameRange     '1.8.1',
+26 silly addNameRange     '1.8.2',
+26 silly addNameRange     '1.8.3',
+26 silly addNameRange     '1.8.4',
+26 silly addNameRange     '1.9.0',
+26 silly addNameRange     '1.9.1',
+26 silly addNameRange     '1.9.2',
+26 silly addNameRange     '1.9.3',
+26 silly addNameRange     '1.10.0',
+26 silly addNameRange     '1.10.1',
+26 silly addNameRange     '1.10.2',
+26 silly addNameRange     '1.11.0',
+26 silly addNameRange     '1.12.0',
+26 silly addNameRange     '1.12.1',
+26 silly addNameRange     '1.12.2',
+26 silly addNameRange     '1.12.3' ] ]
+27 verbose addNamed body-parser@1.12.3
+28 silly addNamed semver.valid 1.12.3
+29 silly addNamed semver.validRange 1.12.3
+30 silly mapToRegistry name body-parser
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+34 verbose addRemoteTarball https://registry.npmjs.org/body-parser/-/body-parser-1.12.3.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/body-parser/-/body-parser-1.12.3.tgz',
+35 verbose addRemoteTarball   '5f40bf17e7823be6895d4d35582752e36cf97f71' ]
+36 info retry fetch attempt 1 at 2:25:30 PM
+37 info attempt registry request try #1 at 2:25:30 PM
+38 http fetch GET https://registry.npmjs.org/body-parser/-/body-parser-1.12.3.tgz
+39 http fetch 200 https://registry.npmjs.org/body-parser/-/body-parser-1.12.3.tgz
+40 silly fetchAndShaCheck shasum 5f40bf17e7823be6895d4d35582752e36cf97f71
+41 verbose addTmpTarball /var/folders/68/2xj45t3s355_jdqtqfhgdyr00000gn/T/npm-12291-04da1dad/registry.npmjs.org/body-parser/-/body-parser-1.12.3.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for body-parser@1.12.3
+43 silly cache afterAdd body-parser@1.12.3
+44 verbose afterAdd /Users/davidjokinen/.npm/body-parser/1.12.3/package/package.json not in flight; writing
+45 verbose afterAdd /Users/davidjokinen/.npm/body-parser/1.12.3/package/package.json written
+46 silly install resolved [ { name: 'body-parser',
+46 silly install resolved     description: 'Node.js body parsing middleware',
+46 silly install resolved     version: '1.12.3',
+46 silly install resolved     contributors: [ [Object], [Object] ],
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     repository: { type: 'git', url: 'https://github.com/expressjs/body-parser' },
+46 silly install resolved     dependencies:
+46 silly install resolved      { bytes: '1.0.0',
+46 silly install resolved        'content-type': '~1.0.1',
+46 silly install resolved        debug: '~2.1.3',
+46 silly install resolved        depd: '~1.0.1',
+46 silly install resolved        'iconv-lite': '0.4.8',
+46 silly install resolved        'on-finished': '~2.2.0',
+46 silly install resolved        qs: '2.4.1',
+46 silly install resolved        'raw-body': '1.3.4',
+46 silly install resolved        'type-is': '~1.6.1' },
+46 silly install resolved     devDependencies:
+46 silly install resolved      { istanbul: '0.3.9',
+46 silly install resolved        methods: '~1.1.1',
+46 silly install resolved        mocha: '~2.2.4',
+46 silly install resolved        supertest: '~0.15.0' },
+46 silly install resolved     files: [ 'lib/', 'LICENSE', 'HISTORY.md', 'index.js' ],
+46 silly install resolved     engines: { node: '>= 0.8' },
+46 silly install resolved     scripts:
+46 silly install resolved      { test: 'mocha --require test/support/env --reporter spec --check-leaks --bail test/',
+46 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/',
+46 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/' },
+46 silly install resolved     gitHead: '5addd8e18e0a72795f9ab93e867d3e50f3429910',
+46 silly install resolved     bugs: { url: 'https://github.com/expressjs/body-parser/issues' },
+46 silly install resolved     homepage: 'https://github.com/expressjs/body-parser',
+46 silly install resolved     _id: 'body-parser@1.12.3',
+46 silly install resolved     _shasum: '5f40bf17e7823be6895d4d35582752e36cf97f71',
+46 silly install resolved     _from: 'body-parser@*',
+46 silly install resolved     _npmVersion: '1.4.28',
+46 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+46 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '5f40bf17e7823be6895d4d35582752e36cf97f71',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/body-parser/-/body-parser-1.12.3.tgz' },
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/body-parser/-/body-parser-1.12.3.tgz' } ]
+47 info install body-parser@1.12.3 into /Users/davidjokinen/FTP/game
+48 info installOne body-parser@1.12.3
+49 verbose installOne of body-parser to /Users/davidjokinen/FTP/game not in flight; installing
+50 verbose lock using /Users/davidjokinen/.npm/_locks/body-parser-770063bc6320785b.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser
+51 silly install write writing body-parser 1.12.3 to /Users/davidjokinen/FTP/game/node_modules/body-parser
+52 silly cache addNamed cb body-parser@1.12.3
+53 verbose unbuild node_modules/body-parser
+54 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser
+55 verbose tar unpack /Users/davidjokinen/.npm/body-parser/1.12.3/package.tgz
+56 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser
+57 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+61 silly gunzTarPerm extractEntry README.md
+62 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+63 silly gunzTarPerm extractEntry LICENSE
+64 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+65 silly gunzTarPerm extractEntry index.js
+66 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+67 silly gunzTarPerm extractEntry HISTORY.md
+68 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+69 silly gunzTarPerm extractEntry lib/read.js
+70 silly gunzTarPerm modified mode [ 'lib/read.js', 438, 420 ]
+71 silly gunzTarPerm extractEntry lib/types/json.js
+72 silly gunzTarPerm modified mode [ 'lib/types/json.js', 438, 420 ]
+73 silly gunzTarPerm extractEntry lib/types/raw.js
+74 silly gunzTarPerm modified mode [ 'lib/types/raw.js', 438, 420 ]
+75 silly gunzTarPerm extractEntry lib/types/text.js
+76 silly gunzTarPerm modified mode [ 'lib/types/text.js', 438, 420 ]
+77 silly gunzTarPerm extractEntry lib/types/urlencoded.js
+78 silly gunzTarPerm modified mode [ 'lib/types/urlencoded.js', 438, 420 ]
+79 info preinstall body-parser@1.12.3
+80 silly prepareForInstallMany adding bytes@1.0.0 from body-parser dependencies
+81 silly prepareForInstallMany adding content-type@~1.0.1 from body-parser dependencies
+82 silly prepareForInstallMany adding debug@~2.1.3 from body-parser dependencies
+83 silly prepareForInstallMany adding depd@~1.0.1 from body-parser dependencies
+84 silly prepareForInstallMany adding iconv-lite@0.4.8 from body-parser dependencies
+85 silly prepareForInstallMany adding on-finished@~2.2.0 from body-parser dependencies
+86 silly prepareForInstallMany adding qs@2.4.1 from body-parser dependencies
+87 silly prepareForInstallMany adding raw-body@1.3.4 from body-parser dependencies
+88 silly prepareForInstallMany adding type-is@~1.6.1 from body-parser dependencies
+89 silly cache add args [ 'bytes@1.0.0', null ]
+90 verbose cache add spec bytes@1.0.0
+91 silly cache add args [ 'content-type@~1.0.1', null ]
+92 verbose cache add spec content-type@~1.0.1
+93 silly cache add parsed spec { raw: 'bytes@1.0.0',
+93 silly cache add   scope: null,
+93 silly cache add   name: 'bytes',
+93 silly cache add   rawSpec: '1.0.0',
+93 silly cache add   spec: '1.0.0',
+93 silly cache add   type: 'version' }
+94 verbose addNamed bytes@1.0.0
+95 silly addNamed semver.valid 1.0.0
+96 silly addNamed semver.validRange 1.0.0
+97 silly mapToRegistry name bytes
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry uri https://registry.npmjs.org/bytes
+101 verbose addNameVersion registry:https://registry.npmjs.org/bytes not in flight; fetching
+102 silly cache add parsed spec { raw: 'content-type@~1.0.1',
+102 silly cache add   scope: null,
+102 silly cache add   name: 'content-type',
+102 silly cache add   rawSpec: '~1.0.1',
+102 silly cache add   spec: '>=1.0.1 <1.1.0',
+102 silly cache add   type: 'range' }
+103 verbose addNamed content-type@>=1.0.1 <1.1.0
+104 silly addNamed semver.valid null
+105 silly addNamed semver.validRange >=1.0.1 <1.1.0
+106 silly addNameRange { name: 'content-type', range: '>=1.0.1 <1.1.0', hasData: false }
+107 silly mapToRegistry name content-type
+108 silly mapToRegistry using default registry
+109 silly mapToRegistry registry https://registry.npmjs.org/
+110 silly mapToRegistry uri https://registry.npmjs.org/content-type
+111 verbose addNameRange registry:https://registry.npmjs.org/content-type not in flight; fetching
+112 silly cache add args [ 'debug@~2.1.3', null ]
+113 verbose cache add spec debug@~2.1.3
+114 silly cache add parsed spec { raw: 'debug@~2.1.3',
+114 silly cache add   scope: null,
+114 silly cache add   name: 'debug',
+114 silly cache add   rawSpec: '~2.1.3',
+114 silly cache add   spec: '>=2.1.3 <2.2.0',
+114 silly cache add   type: 'range' }
+115 verbose addNamed debug@>=2.1.3 <2.2.0
+116 silly addNamed semver.valid null
+117 silly addNamed semver.validRange >=2.1.3 <2.2.0
+118 silly addNameRange { name: 'debug', range: '>=2.1.3 <2.2.0', hasData: false }
+119 silly mapToRegistry name debug
+120 silly mapToRegistry using default registry
+121 silly mapToRegistry registry https://registry.npmjs.org/
+122 silly mapToRegistry uri https://registry.npmjs.org/debug
+123 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+124 silly cache add args [ 'depd@~1.0.1', null ]
+125 verbose cache add spec depd@~1.0.1
+126 silly cache add parsed spec { raw: 'depd@~1.0.1',
+126 silly cache add   scope: null,
+126 silly cache add   name: 'depd',
+126 silly cache add   rawSpec: '~1.0.1',
+126 silly cache add   spec: '>=1.0.1 <1.1.0',
+126 silly cache add   type: 'range' }
+127 verbose addNamed depd@>=1.0.1 <1.1.0
+128 silly addNamed semver.valid null
+129 silly addNamed semver.validRange >=1.0.1 <1.1.0
+130 silly addNameRange { name: 'depd', range: '>=1.0.1 <1.1.0', hasData: false }
+131 silly mapToRegistry name depd
+132 silly mapToRegistry using default registry
+133 silly mapToRegistry registry https://registry.npmjs.org/
+134 silly mapToRegistry uri https://registry.npmjs.org/depd
+135 verbose addNameRange registry:https://registry.npmjs.org/depd not in flight; fetching
+136 silly cache add args [ 'iconv-lite@0.4.8', null ]
+137 verbose cache add spec iconv-lite@0.4.8
+138 silly cache add parsed spec { raw: 'iconv-lite@0.4.8',
+138 silly cache add   scope: null,
+138 silly cache add   name: 'iconv-lite',
+138 silly cache add   rawSpec: '0.4.8',
+138 silly cache add   spec: '0.4.8',
+138 silly cache add   type: 'version' }
+139 verbose addNamed iconv-lite@0.4.8
+140 silly addNamed semver.valid 0.4.8
+141 silly addNamed semver.validRange 0.4.8
+142 silly mapToRegistry name iconv-lite
+143 silly mapToRegistry using default registry
+144 silly mapToRegistry registry https://registry.npmjs.org/
+145 silly mapToRegistry uri https://registry.npmjs.org/iconv-lite
+146 verbose addNameVersion registry:https://registry.npmjs.org/iconv-lite not in flight; fetching
+147 silly cache add args [ 'on-finished@~2.2.0', null ]
+148 verbose cache add spec on-finished@~2.2.0
+149 silly cache add parsed spec { raw: 'on-finished@~2.2.0',
+149 silly cache add   scope: null,
+149 silly cache add   name: 'on-finished',
+149 silly cache add   rawSpec: '~2.2.0',
+149 silly cache add   spec: '>=2.2.0 <2.3.0',
+149 silly cache add   type: 'range' }
+150 verbose addNamed on-finished@>=2.2.0 <2.3.0
+151 silly addNamed semver.valid null
+152 silly addNamed semver.validRange >=2.2.0 <2.3.0
+153 silly addNameRange { name: 'on-finished', range: '>=2.2.0 <2.3.0', hasData: false }
+154 silly mapToRegistry name on-finished
+155 silly mapToRegistry using default registry
+156 silly mapToRegistry registry https://registry.npmjs.org/
+157 silly mapToRegistry uri https://registry.npmjs.org/on-finished
+158 verbose addNameRange registry:https://registry.npmjs.org/on-finished not in flight; fetching
+159 silly cache add args [ 'qs@2.4.1', null ]
+160 verbose cache add spec qs@2.4.1
+161 silly cache add parsed spec { raw: 'qs@2.4.1',
+161 silly cache add   scope: null,
+161 silly cache add   name: 'qs',
+161 silly cache add   rawSpec: '2.4.1',
+161 silly cache add   spec: '2.4.1',
+161 silly cache add   type: 'version' }
+162 verbose addNamed qs@2.4.1
+163 silly addNamed semver.valid 2.4.1
+164 silly addNamed semver.validRange 2.4.1
+165 silly mapToRegistry name qs
+166 silly mapToRegistry using default registry
+167 silly mapToRegistry registry https://registry.npmjs.org/
+168 silly mapToRegistry uri https://registry.npmjs.org/qs
+169 verbose addNameVersion registry:https://registry.npmjs.org/qs not in flight; fetching
+170 silly cache add args [ 'raw-body@1.3.4', null ]
+171 verbose cache add spec raw-body@1.3.4
+172 silly cache add parsed spec { raw: 'raw-body@1.3.4',
+172 silly cache add   scope: null,
+172 silly cache add   name: 'raw-body',
+172 silly cache add   rawSpec: '1.3.4',
+172 silly cache add   spec: '1.3.4',
+172 silly cache add   type: 'version' }
+173 verbose addNamed raw-body@1.3.4
+174 silly addNamed semver.valid 1.3.4
+175 silly addNamed semver.validRange 1.3.4
+176 silly mapToRegistry name raw-body
+177 silly mapToRegistry using default registry
+178 silly mapToRegistry registry https://registry.npmjs.org/
+179 silly mapToRegistry uri https://registry.npmjs.org/raw-body
+180 verbose addNameVersion registry:https://registry.npmjs.org/raw-body not in flight; fetching
+181 silly cache add args [ 'type-is@~1.6.1', null ]
+182 verbose cache add spec type-is@~1.6.1
+183 silly cache add parsed spec { raw: 'type-is@~1.6.1',
+183 silly cache add   scope: null,
+183 silly cache add   name: 'type-is',
+183 silly cache add   rawSpec: '~1.6.1',
+183 silly cache add   spec: '>=1.6.1 <1.7.0',
+183 silly cache add   type: 'range' }
+184 verbose addNamed type-is@>=1.6.1 <1.7.0
+185 silly addNamed semver.valid null
+186 silly addNamed semver.validRange >=1.6.1 <1.7.0
+187 silly addNameRange { name: 'type-is', range: '>=1.6.1 <1.7.0', hasData: false }
+188 silly mapToRegistry name type-is
+189 silly mapToRegistry using default registry
+190 silly mapToRegistry registry https://registry.npmjs.org/
+191 silly mapToRegistry uri https://registry.npmjs.org/type-is
+192 verbose addNameRange registry:https://registry.npmjs.org/type-is not in flight; fetching
+193 verbose request uri https://registry.npmjs.org/content-type
+194 verbose request no auth needed
+195 info attempt registry request try #1 at 2:25:30 PM
+196 http request GET https://registry.npmjs.org/content-type
+197 verbose request uri https://registry.npmjs.org/bytes
+198 verbose request no auth needed
+199 info attempt registry request try #1 at 2:25:30 PM
+200 verbose etag "4D134PHIHPOGS7JHOLXQJLP2X"
+201 http request GET https://registry.npmjs.org/bytes
+202 verbose request uri https://registry.npmjs.org/depd
+203 verbose request no auth needed
+204 info attempt registry request try #1 at 2:25:30 PM
+205 verbose etag "E44DEG3EIRLEUPU23GKMYXRAJ"
+206 http request GET https://registry.npmjs.org/depd
+207 verbose request uri https://registry.npmjs.org/debug
+208 verbose request no auth needed
+209 info attempt registry request try #1 at 2:25:30 PM
+210 verbose etag "21OHHI3RSKAKVIV42MMPUY9CR"
+211 http request GET https://registry.npmjs.org/debug
+212 verbose request uri https://registry.npmjs.org/iconv-lite
+213 verbose request no auth needed
+214 info attempt registry request try #1 at 2:25:30 PM
+215 verbose etag "D9YGJWETXWIGLJRAGC9Z0XTH6"
+216 http request GET https://registry.npmjs.org/iconv-lite
+217 verbose request uri https://registry.npmjs.org/on-finished
+218 verbose request no auth needed
+219 info attempt registry request try #1 at 2:25:30 PM
+220 verbose etag "94IVTJWHQZV71DISH1WGHTVO9"
+221 http request GET https://registry.npmjs.org/on-finished
+222 verbose request uri https://registry.npmjs.org/qs
+223 verbose request no auth needed
+224 info attempt registry request try #1 at 2:25:30 PM
+225 verbose etag "2QBZS07NL35YFWRQA4OMHFA3M"
+226 http request GET https://registry.npmjs.org/qs
+227 verbose request uri https://registry.npmjs.org/raw-body
+228 verbose request no auth needed
+229 info attempt registry request try #1 at 2:25:30 PM
+230 verbose etag "2ERSEM0A4ZLNJ2IKBDD8TJQB"
+231 http request GET https://registry.npmjs.org/raw-body
+232 verbose request uri https://registry.npmjs.org/type-is
+233 verbose request no auth needed
+234 info attempt registry request try #1 at 2:25:30 PM
+235 verbose etag "8SX6D9BKR10WTGF3IW73K4LJF"
+236 http request GET https://registry.npmjs.org/type-is
+237 http 200 https://registry.npmjs.org/content-type
+238 silly get cb [ 200,
+238 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+238 silly get     etag: '"8O24AGWIP2HNNPS49I8AYDZS8"',
+238 silly get     'content-type': 'application/json',
+238 silly get     'cache-control': 'max-age=60',
+238 silly get     'content-length': '7376',
+238 silly get     'accept-ranges': 'bytes',
+238 silly get     date: 'Thu, 07 May 2015 18:25:29 GMT',
+238 silly get     via: '1.1 varnish',
+238 silly get     age: '3',
+238 silly get     connection: 'keep-alive',
+238 silly get     'x-served-by': 'cache-iad2121-IAD',
+238 silly get     'x-cache': 'HIT',
+238 silly get     'x-cache-hits': '1',
+238 silly get     'x-timer': 'S1431023129.284121,VS0,VE1',
+238 silly get     vary: 'Accept' } ]
+239 verbose get saving content-type to /Users/davidjokinen/.npm/registry.npmjs.org/content-type/.cache.json
+240 http 304 https://registry.npmjs.org/debug
+241 silly get cb [ 304,
+241 silly get   { date: 'Thu, 07 May 2015 18:25:29 GMT',
+241 silly get     via: '1.1 varnish',
+241 silly get     'cache-control': 'max-age=60',
+241 silly get     etag: '"21OHHI3RSKAKVIV42MMPUY9CR"',
+241 silly get     age: '15',
+241 silly get     connection: 'keep-alive',
+241 silly get     'x-served-by': 'cache-iad2124-IAD',
+241 silly get     'x-cache': 'HIT',
+241 silly get     'x-cache-hits': '1',
+241 silly get     'x-timer': 'S1431023129.284606,VS0,VE1',
+241 silly get     vary: 'Accept' } ]
+242 verbose etag https://registry.npmjs.org/debug from cache
+243 verbose get saving debug to /Users/davidjokinen/.npm/registry.npmjs.org/debug/.cache.json
+244 silly addNameRange number 2 { name: 'debug', range: '>=2.1.3 <2.2.0', hasData: true }
+245 silly addNameRange versions [ 'debug',
+245 silly addNameRange   [ '0.0.1',
+245 silly addNameRange     '0.1.0',
+245 silly addNameRange     '0.2.0',
+245 silly addNameRange     '0.3.0',
+245 silly addNameRange     '0.4.0',
+245 silly addNameRange     '0.4.1',
+245 silly addNameRange     '0.5.0',
+245 silly addNameRange     '0.6.0',
+245 silly addNameRange     '0.7.0',
+245 silly addNameRange     '0.7.1',
+245 silly addNameRange     '0.7.2',
+245 silly addNameRange     '0.7.3',
+245 silly addNameRange     '0.7.4',
+245 silly addNameRange     '0.8.0',
+245 silly addNameRange     '0.8.1',
+245 silly addNameRange     '1.0.0',
+245 silly addNameRange     '1.0.1',
+245 silly addNameRange     '1.0.2',
+245 silly addNameRange     '1.0.3',
+245 silly addNameRange     '1.0.4',
+245 silly addNameRange     '2.0.0',
+245 silly addNameRange     '2.1.0',
+245 silly addNameRange     '2.1.1',
+245 silly addNameRange     '2.1.2',
+245 silly addNameRange     '2.1.3' ] ]
+246 verbose addNamed debug@2.1.3
+247 silly addNamed semver.valid 2.1.3
+248 silly addNamed semver.validRange 2.1.3
+249 silly addNameRange number 2 { name: 'content-type', range: '>=1.0.1 <1.1.0', hasData: true }
+250 silly addNameRange versions [ 'content-type', [ '0.0.1', '1.0.0', '1.0.1' ] ]
+251 verbose addNamed content-type@1.0.1
+252 silly addNamed semver.valid 1.0.1
+253 silly addNamed semver.validRange 1.0.1
+254 silly mapToRegistry name content-type
+255 silly mapToRegistry using default registry
+256 silly mapToRegistry registry https://registry.npmjs.org/
+257 silly mapToRegistry uri https://registry.npmjs.org/content-type
+258 verbose addRemoteTarball https://registry.npmjs.org/content-type/-/content-type-1.0.1.tgz not in flight; adding
+259 verbose addRemoteTarball [ 'https://registry.npmjs.org/content-type/-/content-type-1.0.1.tgz',
+259 verbose addRemoteTarball   'a19d2247327dc038050ce622b7a154ec59c5e600' ]
+260 info retry fetch attempt 1 at 2:25:31 PM
+261 info attempt registry request try #1 at 2:25:31 PM
+262 http fetch GET https://registry.npmjs.org/content-type/-/content-type-1.0.1.tgz
+263 silly cache afterAdd debug@2.1.3
+264 verbose afterAdd /Users/davidjokinen/.npm/debug/2.1.3/package/package.json not in flight; writing
+265 verbose afterAdd /Users/davidjokinen/.npm/debug/2.1.3/package/package.json written
+266 http 200 https://registry.npmjs.org/on-finished
+267 silly get cb [ 200,
+267 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+267 silly get     etag: '"BCHRUOCZ12BM4QUPMMW8U0425"',
+267 silly get     'content-type': 'application/json',
+267 silly get     'cache-control': 'max-age=60',
+267 silly get     'content-length': '11558',
+267 silly get     'accept-ranges': 'bytes',
+267 silly get     date: 'Thu, 07 May 2015 18:25:29 GMT',
+267 silly get     via: '1.1 varnish',
+267 silly get     age: '3',
+267 silly get     connection: 'keep-alive',
+267 silly get     'x-served-by': 'cache-iad2140-IAD',
+267 silly get     'x-cache': 'HIT',
+267 silly get     'x-cache-hits': '1',
+267 silly get     'x-timer': 'S1431023129.301278,VS0,VE0',
+267 silly get     vary: 'Accept' } ]
+268 verbose get saving on-finished to /Users/davidjokinen/.npm/registry.npmjs.org/on-finished/.cache.json
+269 http 304 https://registry.npmjs.org/qs
+270 silly get cb [ 304,
+270 silly get   { date: 'Thu, 07 May 2015 18:25:29 GMT',
+270 silly get     via: '1.1 varnish',
+270 silly get     'last-modified': 'Thu, 07 May 2015 18:25:26 GMT',
+270 silly get     'cache-control': 'max-age=60',
+270 silly get     etag: '"2QBZS07NL35YFWRQA4OMHFA3M"',
+270 silly get     age: '39',
+270 silly get     connection: 'keep-alive',
+270 silly get     'x-served-by': 'cache-iad2120-IAD',
+270 silly get     'x-cache': 'HIT',
+270 silly get     'x-cache-hits': '2',
+270 silly get     'x-timer': 'S1431023129.303241,VS0,VE0',
+270 silly get     vary: 'Accept' } ]
+271 verbose etag https://registry.npmjs.org/qs from cache
+272 verbose get saving qs to /Users/davidjokinen/.npm/registry.npmjs.org/qs/.cache.json
+273 http 304 https://registry.npmjs.org/raw-body
+274 silly get cb [ 304,
+274 silly get   { date: 'Thu, 07 May 2015 18:25:29 GMT',
+274 silly get     via: '1.1 varnish',
+274 silly get     'cache-control': 'max-age=60',
+274 silly get     etag: '"2ERSEM0A4ZLNJ2IKBDD8TJQB"',
+274 silly get     age: '7',
+274 silly get     connection: 'keep-alive',
+274 silly get     'x-served-by': 'cache-iad2135-IAD',
+274 silly get     'x-cache': 'HIT',
+274 silly get     'x-cache-hits': '1',
+274 silly get     'x-timer': 'S1431023129.303870,VS0,VE0',
+274 silly get     vary: 'Accept' } ]
+275 verbose etag https://registry.npmjs.org/raw-body from cache
+276 verbose get saving raw-body to /Users/davidjokinen/.npm/registry.npmjs.org/raw-body/.cache.json
+277 http 200 https://registry.npmjs.org/depd
+278 silly get cb [ 200,
+278 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+278 silly get     etag: '"EXES9RDIT31NIDPYYVZ47XB58"',
+278 silly get     'content-type': 'application/json',
+278 silly get     'cache-control': 'max-age=60',
+278 silly get     'content-length': '27065',
+278 silly get     'accept-ranges': 'bytes',
+278 silly get     date: 'Thu, 07 May 2015 18:25:29 GMT',
+278 silly get     via: '1.1 varnish',
+278 silly get     age: '8',
+278 silly get     connection: 'keep-alive',
+278 silly get     'x-served-by': 'cache-iad2122-IAD',
+278 silly get     'x-cache': 'HIT',
+278 silly get     'x-cache-hits': '1',
+278 silly get     'x-timer': 'S1431023129.284404,VS0,VE1',
+278 silly get     vary: 'Accept' } ]
+279 verbose get saving depd to /Users/davidjokinen/.npm/registry.npmjs.org/depd/.cache.json
+280 silly addNameRange number 2 { name: 'depd', range: '>=1.0.1 <1.1.0', hasData: true }
+281 silly addNameRange versions [ 'depd',
+281 silly addNameRange   [ '0.0.0',
+281 silly addNameRange     '0.0.1',
+281 silly addNameRange     '0.1.0',
+281 silly addNameRange     '0.2.0',
+281 silly addNameRange     '0.3.0',
+281 silly addNameRange     '0.4.0',
+281 silly addNameRange     '0.4.1',
+281 silly addNameRange     '0.4.2',
+281 silly addNameRange     '0.4.3',
+281 silly addNameRange     '0.4.4',
+281 silly addNameRange     '0.4.5',
+281 silly addNameRange     '1.0.0',
+281 silly addNameRange     '1.0.1' ] ]
+282 verbose addNamed depd@1.0.1
+283 silly addNamed semver.valid 1.0.1
+284 silly addNamed semver.validRange 1.0.1
+285 silly addNameRange number 2 { name: 'on-finished', range: '>=2.2.0 <2.3.0', hasData: true }
+286 silly addNameRange versions [ 'on-finished',
+286 silly addNameRange   [ '2.0.0', '2.1.0', '2.1.1', '2.2.0', '2.2.1' ] ]
+287 verbose addNamed on-finished@2.2.1
+288 silly addNamed semver.valid 2.2.1
+289 silly addNamed semver.validRange 2.2.1
+290 silly mapToRegistry name depd
+291 silly mapToRegistry using default registry
+292 silly mapToRegistry registry https://registry.npmjs.org/
+293 silly mapToRegistry uri https://registry.npmjs.org/depd
+294 verbose addRemoteTarball https://registry.npmjs.org/depd/-/depd-1.0.1.tgz not in flight; adding
+295 verbose addRemoteTarball [ 'https://registry.npmjs.org/depd/-/depd-1.0.1.tgz',
+295 verbose addRemoteTarball   '80aec64c9d6d97e65cc2a9caa93c0aa6abf73aaa' ]
+296 silly mapToRegistry name on-finished
+297 silly mapToRegistry using default registry
+298 silly mapToRegistry registry https://registry.npmjs.org/
+299 silly mapToRegistry uri https://registry.npmjs.org/on-finished
+300 verbose addRemoteTarball https://registry.npmjs.org/on-finished/-/on-finished-2.2.1.tgz not in flight; adding
+301 verbose addRemoteTarball [ 'https://registry.npmjs.org/on-finished/-/on-finished-2.2.1.tgz',
+301 verbose addRemoteTarball   '5c85c1cc36299f78029653f667f27b6b99ebc029' ]
+302 silly mapToRegistry name raw-body
+303 silly mapToRegistry using default registry
+304 silly mapToRegistry registry https://registry.npmjs.org/
+305 silly mapToRegistry uri https://registry.npmjs.org/raw-body
+306 verbose addRemoteTarball https://registry.npmjs.org/raw-body/-/raw-body-1.3.4.tgz not in flight; adding
+307 verbose addRemoteTarball [ 'https://registry.npmjs.org/raw-body/-/raw-body-1.3.4.tgz',
+307 verbose addRemoteTarball   'ccc7ddfc46b72861cdd5bb433c840b70b6f27f54' ]
+308 info retry fetch attempt 1 at 2:25:31 PM
+309 info attempt registry request try #1 at 2:25:31 PM
+310 http fetch GET https://registry.npmjs.org/depd/-/depd-1.0.1.tgz
+311 info retry fetch attempt 1 at 2:25:31 PM
+312 info attempt registry request try #1 at 2:25:31 PM
+313 http fetch GET https://registry.npmjs.org/on-finished/-/on-finished-2.2.1.tgz
+314 info retry fetch attempt 1 at 2:25:31 PM
+315 info attempt registry request try #1 at 2:25:31 PM
+316 http fetch GET https://registry.npmjs.org/raw-body/-/raw-body-1.3.4.tgz
+317 silly cache afterAdd qs@2.4.1
+318 verbose afterAdd /Users/davidjokinen/.npm/qs/2.4.1/package/package.json not in flight; writing
+319 verbose afterAdd /Users/davidjokinen/.npm/qs/2.4.1/package/package.json written
+320 http 200 https://registry.npmjs.org/type-is
+321 silly get cb [ 200,
+321 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+321 silly get     etag: '"B4UY94Q4YGC64MKVWRSOPEHS5"',
+321 silly get     'content-type': 'application/json',
+321 silly get     'cache-control': 'max-age=60',
+321 silly get     'content-length': '35438',
+321 silly get     'accept-ranges': 'bytes',
+321 silly get     date: 'Thu, 07 May 2015 18:25:29 GMT',
+321 silly get     via: '1.1 varnish',
+321 silly get     age: '60',
+321 silly get     connection: 'keep-alive',
+321 silly get     'x-served-by': 'cache-iad2123-IAD',
+321 silly get     'x-cache': 'HIT',
+321 silly get     'x-cache-hits': '2',
+321 silly get     'x-timer': 'S1431023129.301822,VS0,VE0',
+321 silly get     vary: 'Accept' } ]
+322 verbose get saving type-is to /Users/davidjokinen/.npm/registry.npmjs.org/type-is/.cache.json
+323 http 200 https://registry.npmjs.org/iconv-lite
+324 silly get cb [ 200,
+324 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+324 silly get     etag: '"BQERB8K8THBKCG7GIC641H944"',
+324 silly get     'content-type': 'application/json',
+324 silly get     'cache-control': 'max-age=60',
+324 silly get     'content-length': '48250',
+324 silly get     'accept-ranges': 'bytes',
+324 silly get     date: 'Thu, 07 May 2015 18:25:29 GMT',
+324 silly get     via: '1.1 varnish',
+324 silly get     age: '8',
+324 silly get     connection: 'keep-alive',
+324 silly get     'x-served-by': 'cache-iad2127-IAD',
+324 silly get     'x-cache': 'HIT',
+324 silly get     'x-cache-hits': '2',
+324 silly get     'x-timer': 'S1431023129.295952,VS0,VE0',
+324 silly get     vary: 'Accept' } ]
+325 verbose get saving iconv-lite to /Users/davidjokinen/.npm/registry.npmjs.org/iconv-lite/.cache.json
+326 http 304 https://registry.npmjs.org/bytes
+327 silly get cb [ 304,
+327 silly get   { date: 'Thu, 07 May 2015 18:25:29 GMT',
+327 silly get     via: '1.1 varnish',
+327 silly get     'last-modified': 'Thu, 07 May 2015 18:25:29 GMT',
+327 silly get     'cache-control': 'max-age=60',
+327 silly get     etag: '"4D134PHIHPOGS7JHOLXQJLP2X"',
+327 silly get     age: '0',
+327 silly get     connection: 'keep-alive',
+327 silly get     'x-served-by': 'cache-iad2140-IAD',
+327 silly get     'x-cache': 'HIT',
+327 silly get     'x-cache-hits': '1',
+327 silly get     'x-timer': 'S1431023129.283339,VS0,VE59',
+327 silly get     vary: 'Accept' } ]
+328 verbose etag https://registry.npmjs.org/bytes from cache
+329 verbose get saving bytes to /Users/davidjokinen/.npm/registry.npmjs.org/bytes/.cache.json
+330 silly mapToRegistry name iconv-lite
+331 silly mapToRegistry using default registry
+332 silly mapToRegistry registry https://registry.npmjs.org/
+333 silly mapToRegistry uri https://registry.npmjs.org/iconv-lite
+334 verbose addRemoteTarball https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.8.tgz not in flight; adding
+335 verbose addRemoteTarball [ 'https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.8.tgz',
+335 verbose addRemoteTarball   'c6019a7595f2cefca702eab694a010bcd9298d20' ]
+336 silly addNameRange number 2 { name: 'type-is', range: '>=1.6.1 <1.7.0', hasData: true }
+337 silly addNameRange versions [ 'type-is',
+337 silly addNameRange   [ '1.0.0',
+337 silly addNameRange     '1.0.1',
+337 silly addNameRange     '1.1.0',
+337 silly addNameRange     '1.2.0',
+337 silly addNameRange     '1.2.1',
+337 silly addNameRange     '1.2.2',
+337 silly addNameRange     '1.3.0',
+337 silly addNameRange     '1.3.1',
+337 silly addNameRange     '1.3.2',
+337 silly addNameRange     '1.4.0',
+337 silly addNameRange     '1.5.0',
+337 silly addNameRange     '1.5.1',
+337 silly addNameRange     '1.5.2',
+337 silly addNameRange     '1.5.3',
+337 silly addNameRange     '1.5.4',
+337 silly addNameRange     '1.5.5',
+337 silly addNameRange     '1.5.6',
+337 silly addNameRange     '1.5.7',
+337 silly addNameRange     '1.6.0',
+337 silly addNameRange     '1.6.1' ] ]
+338 verbose addNamed type-is@1.6.1
+339 silly addNamed semver.valid 1.6.1
+340 silly addNamed semver.validRange 1.6.1
+341 silly mapToRegistry name type-is
+342 silly mapToRegistry using default registry
+343 silly mapToRegistry registry https://registry.npmjs.org/
+344 silly mapToRegistry uri https://registry.npmjs.org/type-is
+345 verbose addRemoteTarball https://registry.npmjs.org/type-is/-/type-is-1.6.1.tgz not in flight; adding
+346 verbose addRemoteTarball [ 'https://registry.npmjs.org/type-is/-/type-is-1.6.1.tgz',
+346 verbose addRemoteTarball   '49addecb0f6831cbc1d34ba929f0f3a4f21b0f2e' ]
+347 info retry fetch attempt 1 at 2:25:31 PM
+348 info attempt registry request try #1 at 2:25:31 PM
+349 http fetch GET https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.8.tgz
+350 info retry fetch attempt 1 at 2:25:31 PM
+351 info attempt registry request try #1 at 2:25:31 PM
+352 http fetch GET https://registry.npmjs.org/type-is/-/type-is-1.6.1.tgz
+353 silly cache afterAdd bytes@1.0.0
+354 verbose afterAdd /Users/davidjokinen/.npm/bytes/1.0.0/package/package.json not in flight; writing
+355 verbose afterAdd /Users/davidjokinen/.npm/bytes/1.0.0/package/package.json written
+356 http fetch 200 https://registry.npmjs.org/content-type/-/content-type-1.0.1.tgz
+357 silly fetchAndShaCheck shasum a19d2247327dc038050ce622b7a154ec59c5e600
+358 verbose addTmpTarball /var/folders/68/2xj45t3s355_jdqtqfhgdyr00000gn/T/npm-12291-04da1dad/registry.npmjs.org/content-type/-/content-type-1.0.1.tgz not in flight; adding
+359 verbose addTmpTarball already have metadata; skipping unpack for content-type@1.0.1
+360 silly cache afterAdd content-type@1.0.1
+361 verbose afterAdd /Users/davidjokinen/.npm/content-type/1.0.1/package/package.json not in flight; writing
+362 verbose afterAdd /Users/davidjokinen/.npm/content-type/1.0.1/package/package.json written
+363 http fetch 200 https://registry.npmjs.org/on-finished/-/on-finished-2.2.1.tgz
+364 http fetch 200 https://registry.npmjs.org/depd/-/depd-1.0.1.tgz
+365 silly fetchAndShaCheck shasum 5c85c1cc36299f78029653f667f27b6b99ebc029
+366 silly fetchAndShaCheck shasum 80aec64c9d6d97e65cc2a9caa93c0aa6abf73aaa
+367 verbose addTmpTarball /var/folders/68/2xj45t3s355_jdqtqfhgdyr00000gn/T/npm-12291-04da1dad/registry.npmjs.org/on-finished/-/on-finished-2.2.1.tgz not in flight; adding
+368 verbose addTmpTarball already have metadata; skipping unpack for on-finished@2.2.1
+369 verbose addTmpTarball /var/folders/68/2xj45t3s355_jdqtqfhgdyr00000gn/T/npm-12291-04da1dad/registry.npmjs.org/depd/-/depd-1.0.1.tgz not in flight; adding
+370 verbose addTmpTarball already have metadata; skipping unpack for depd@1.0.1
+371 silly cache afterAdd on-finished@2.2.1
+372 verbose afterAdd /Users/davidjokinen/.npm/on-finished/2.2.1/package/package.json not in flight; writing
+373 silly cache afterAdd depd@1.0.1
+374 verbose afterAdd /Users/davidjokinen/.npm/depd/1.0.1/package/package.json not in flight; writing
+375 verbose afterAdd /Users/davidjokinen/.npm/on-finished/2.2.1/package/package.json written
+376 http fetch 200 https://registry.npmjs.org/raw-body/-/raw-body-1.3.4.tgz
+377 verbose afterAdd /Users/davidjokinen/.npm/depd/1.0.1/package/package.json written
+378 silly fetchAndShaCheck shasum ccc7ddfc46b72861cdd5bb433c840b70b6f27f54
+379 verbose addTmpTarball /var/folders/68/2xj45t3s355_jdqtqfhgdyr00000gn/T/npm-12291-04da1dad/registry.npmjs.org/raw-body/-/raw-body-1.3.4.tgz not in flight; adding
+380 verbose addTmpTarball already have metadata; skipping unpack for raw-body@1.3.4
+381 silly cache afterAdd raw-body@1.3.4
+382 verbose afterAdd /Users/davidjokinen/.npm/raw-body/1.3.4/package/package.json not in flight; writing
+383 verbose afterAdd /Users/davidjokinen/.npm/raw-body/1.3.4/package/package.json written
+384 http fetch 200 https://registry.npmjs.org/type-is/-/type-is-1.6.1.tgz
+385 silly fetchAndShaCheck shasum 49addecb0f6831cbc1d34ba929f0f3a4f21b0f2e
+386 verbose addTmpTarball /var/folders/68/2xj45t3s355_jdqtqfhgdyr00000gn/T/npm-12291-04da1dad/registry.npmjs.org/type-is/-/type-is-1.6.1.tgz not in flight; adding
+387 verbose addTmpTarball already have metadata; skipping unpack for type-is@1.6.1
+388 silly cache afterAdd type-is@1.6.1
+389 verbose afterAdd /Users/davidjokinen/.npm/type-is/1.6.1/package/package.json not in flight; writing
+390 verbose afterAdd /Users/davidjokinen/.npm/type-is/1.6.1/package/package.json written
+391 http fetch 200 https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.8.tgz
+392 silly fetchAndShaCheck shasum c6019a7595f2cefca702eab694a010bcd9298d20
+393 verbose addTmpTarball /var/folders/68/2xj45t3s355_jdqtqfhgdyr00000gn/T/npm-12291-04da1dad/registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.8.tgz not in flight; adding
+394 verbose addTmpTarball already have metadata; skipping unpack for iconv-lite@0.4.8
+395 silly cache afterAdd iconv-lite@0.4.8
+396 verbose afterAdd /Users/davidjokinen/.npm/iconv-lite/0.4.8/package/package.json not in flight; writing
+397 verbose afterAdd /Users/davidjokinen/.npm/iconv-lite/0.4.8/package/package.json written
+398 silly install resolved [ { name: 'debug',
+398 silly install resolved     version: '2.1.3',
+398 silly install resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+398 silly install resolved     description: 'small debugging utility',
+398 silly install resolved     keywords: [ 'debug', 'log', 'debugger' ],
+398 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+398 silly install resolved     contributors: [ [Object] ],
+398 silly install resolved     license: 'MIT',
+398 silly install resolved     dependencies: { ms: '0.7.0' },
+398 silly install resolved     devDependencies: { browserify: '9.0.3', mocha: '*' },
+398 silly install resolved     main: './node.js',
+398 silly install resolved     browser: './browser.js',
+398 silly install resolved     component: { scripts: [Object] },
+398 silly install resolved     gitHead: '0a8e4b7e0d2d1b55ef4e7422498ca24c677ae63a',
+398 silly install resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
+398 silly install resolved     homepage: 'https://github.com/visionmedia/debug',
+398 silly install resolved     _id: 'debug@2.1.3',
+398 silly install resolved     scripts: {},
+398 silly install resolved     _shasum: 'ce8ab1b5ee8fbee2bfa3b633cab93d366b63418e',
+398 silly install resolved     _from: 'debug@>=2.1.3 <2.2.0',
+398 silly install resolved     _npmVersion: '2.5.1',
+398 silly install resolved     _nodeVersion: '0.12.0',
+398 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+398 silly install resolved     maintainers: [ [Object], [Object] ],
+398 silly install resolved     dist:
+398 silly install resolved      { shasum: 'ce8ab1b5ee8fbee2bfa3b633cab93d366b63418e',
+398 silly install resolved        tarball: 'http://registry.npmjs.org/debug/-/debug-2.1.3.tgz' },
+398 silly install resolved     directories: {},
+398 silly install resolved     _resolved: 'https://registry.npmjs.org/debug/-/debug-2.1.3.tgz',
+398 silly install resolved     readme: 'ERROR: No README data found!' },
+398 silly install resolved   { name: 'qs',
+398 silly install resolved     version: '2.4.1',
+398 silly install resolved     description: 'A querystring parser that supports nesting and arrays, with a depth limit',
+398 silly install resolved     homepage: 'https://github.com/hapijs/qs',
+398 silly install resolved     main: 'index.js',
+398 silly install resolved     dependencies: {},
+398 silly install resolved     devDependencies: { code: '1.x.x', lab: '5.x.x' },
+398 silly install resolved     scripts: { test: 'make test-cov' },
+398 silly install resolved     repository: { type: 'git', url: 'https://github.com/hapijs/qs.git' },
+398 silly install resolved     keywords: [ 'querystring', 'qs' ],
+398 silly install resolved     licenses: [ [Object] ],
+398 silly install resolved     gitHead: '58c6540418954867822c1af3e45fb4c26708b07e',
+398 silly install resolved     bugs: { url: 'https://github.com/hapijs/qs/issues' },
+398 silly install resolved     _id: 'qs@2.4.1',
+398 silly install resolved     _shasum: '68cbaea971013426a80c1404fad6b1a6b1175245',
+398 silly install resolved     _from: 'qs@2.4.1',
+398 silly install resolved     _npmVersion: '2.6.1',
+398 silly install resolved     _nodeVersion: '0.10.36',
+398 silly install resolved     _npmUser: { name: 'nlf', email: 'quitlahok@gmail.com' },
+398 silly install resolved     maintainers: [ [Object], [Object] ],
+398 silly install resolved     dist:
+398 silly install resolved      { shasum: '68cbaea971013426a80c1404fad6b1a6b1175245',
+398 silly install resolved        tarball: 'http://registry.npmjs.org/qs/-/qs-2.4.1.tgz' },
+398 silly install resolved     directories: {},
+398 silly install resolved     _resolved: 'https://registry.npmjs.org/qs/-/qs-2.4.1.tgz',
+398 silly install resolved     readme: 'ERROR: No README data found!' },
+398 silly install resolved   { name: 'bytes',
+398 silly install resolved     author:
+398 silly install resolved      { name: 'TJ Holowaychuk',
+398 silly install resolved        email: 'tj@vision-media.ca',
+398 silly install resolved        url: 'http://tjholowaychuk.com' },
+398 silly install resolved     description: 'byte size string parser / serializer',
+398 silly install resolved     repository:
+398 silly install resolved      { type: 'git',
+398 silly install resolved        url: 'https://github.com/visionmedia/bytes.js.git' },
+398 silly install resolved     version: '1.0.0',
+398 silly install resolved     main: 'index.js',
+398 silly install resolved     dependencies: {},
+398 silly install resolved     devDependencies: { mocha: '*', should: '*' },
+398 silly install resolved     component: { scripts: [Object] },
+398 silly install resolved     bugs: { url: 'https://github.com/visionmedia/bytes.js/issues' },
+398 silly install resolved     homepage: 'https://github.com/visionmedia/bytes.js',
+398 silly install resolved     _id: 'bytes@1.0.0',
+398 silly install resolved     dist:
+398 silly install resolved      { shasum: '3569ede8ba34315fab99c3e92cb04c7220de1fa8',
+398 silly install resolved        tarball: 'http://registry.npmjs.org/bytes/-/bytes-1.0.0.tgz' },
+398 silly install resolved     _from: 'bytes@1.0.0',
+398 silly install resolved     _npmVersion: '1.4.3',
+398 silly install resolved     _npmUser: { name: 'tjholowaychuk', email: 'tj@vision-media.ca' },
+398 silly install resolved     maintainers: [ [Object] ],
+398 silly install resolved     directories: {},
+398 silly install resolved     _shasum: '3569ede8ba34315fab99c3e92cb04c7220de1fa8',
+398 silly install resolved     _resolved: 'https://registry.npmjs.org/bytes/-/bytes-1.0.0.tgz',
+398 silly install resolved     readme: 'ERROR: No README data found!' },
+398 silly install resolved   { name: 'content-type',
+398 silly install resolved     description: 'Create and parse HTTP Content-Type header',
+398 silly install resolved     version: '1.0.1',
+398 silly install resolved     author:
+398 silly install resolved      { name: 'Douglas Christopher Wilson',
+398 silly install resolved        email: 'doug@somethingdoug.com' },
+398 silly install resolved     license: 'MIT',
+398 silly install resolved     keywords: [ 'content-type', 'http', 'req', 'res', 'rfc7231' ],
+398 silly install resolved     repository: { type: 'git', url: 'https://github.com/jshttp/content-type' },
+398 silly install resolved     devDependencies: { istanbul: '0.3.5', mocha: '~1.21.5' },
+398 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'README.md', 'index.js' ],
+398 silly install resolved     engines: { node: '>= 0.6' },
+398 silly install resolved     scripts:
+398 silly install resolved      { test: 'mocha --reporter spec --check-leaks --bail test/',
+398 silly install resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/',
+398 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/' },
+398 silly install resolved     gitHead: '3aa58f9c5a358a3634b8601602177888b4a477d8',
+398 silly install resolved     bugs: { url: 'https://github.com/jshttp/content-type/issues' },
+398 silly install resolved     homepage: 'https://github.com/jshttp/content-type',
+398 silly install resolved     _id: 'content-type@1.0.1',
+398 silly install resolved     _shasum: 'a19d2247327dc038050ce622b7a154ec59c5e600',
+398 silly install resolved     _from: 'content-type@>=1.0.1 <1.1.0',
+398 silly install resolved     _npmVersion: '1.4.28',
+398 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+398 silly install resolved     maintainers: [ [Object] ],
+398 silly install resolved     dist:
+398 silly install resolved      { shasum: 'a19d2247327dc038050ce622b7a154ec59c5e600',
+398 silly install resolved        tarball: 'http://registry.npmjs.org/content-type/-/content-type-1.0.1.tgz' },
+398 silly install resolved     directories: {},
+398 silly install resolved     _resolved: 'https://registry.npmjs.org/content-type/-/content-type-1.0.1.tgz' },
+398 silly install resolved   { name: 'on-finished',
+398 silly install resolved     description: 'Execute a callback when a request closes, finishes, or errors',
+398 silly install resolved     version: '2.2.1',
+398 silly install resolved     contributors: [ [Object], [Object] ],
+398 silly install resolved     license: 'MIT',
+398 silly install resolved     repository: { type: 'git', url: 'https://github.com/jshttp/on-finished' },
+398 silly install resolved     dependencies: { 'ee-first': '1.1.0' },
+398 silly install resolved     devDependencies: { istanbul: '0.3.9', mocha: '~2.2.4' },
+398 silly install resolved     engines: { node: '>= 0.8' },
+398 silly install resolved     files: [ 'HISTORY.md', 'LICENSE', 'index.js' ],
+398 silly install resolved     scripts:
+398 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+398 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+398 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+398 silly install resolved     gitHead: 'f3ecb92fb09d590d314ffe772a6ffd6f76c84223',
+398 silly install resolved     bugs: { url: 'https://github.com/jshttp/on-finished/issues' },
+398 silly install resolved     homepage: 'https://github.com/jshttp/on-finished',
+398 silly install resolved     _id: 'on-finished@2.2.1',
+398 silly install resolved     _shasum: '5c85c1cc36299f78029653f667f27b6b99ebc029',
+398 silly install resolved     _from: 'on-finished@>=2.2.0 <2.3.0',
+398 silly install resolved     _npmVersion: '1.4.28',
+398 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+398 silly install resolved     maintainers: [ [Object], [Object] ],
+398 silly install resolved     dist:
+398 silly install resolved      { shasum: '5c85c1cc36299f78029653f667f27b6b99ebc029',
+398 silly install resolved        tarball: 'http://registry.npmjs.org/on-finished/-/on-finished-2.2.1.tgz' },
+398 silly install resolved     directories: {},
+398 silly install resolved     _resolved: 'https://registry.npmjs.org/on-finished/-/on-finished-2.2.1.tgz' },
+398 silly install resolved   { name: 'depd',
+398 silly install resolved     description: 'Deprecate all the things',
+398 silly install resolved     version: '1.0.1',
+398 silly install resolved     author:
+398 silly install resolved      { name: 'Douglas Christopher Wilson',
+398 silly install resolved        email: 'doug@somethingdoug.com' },
+398 silly install resolved     license: 'MIT',
+398 silly install resolved     keywords: [ 'deprecate', 'deprecated' ],
+398 silly install resolved     repository:
+398 silly install resolved      { type: 'git',
+398 silly install resolved        url: 'https://github.com/dougwilson/nodejs-depd' },
+398 silly install resolved     devDependencies:
+398 silly install resolved      { benchmark: '1.0.0',
+398 silly install resolved        'beautify-benchmark': '0.2.4',
+398 silly install resolved        istanbul: '0.3.5',
+398 silly install resolved        mocha: '~1.21.5' },
+398 silly install resolved     files: [ 'lib/', 'History.md', 'LICENSE', 'index.js', 'Readme.md' ],
+398 silly install resolved     engines: { node: '>= 0.6' },
+398 silly install resolved     scripts:
+398 silly install resolved      { bench: 'node benchmark/index.js',
+398 silly install resolved        test: 'mocha --reporter spec --bail test/',
+398 silly install resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --no-exit test/',
+398 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/' },
+398 silly install resolved     gitHead: '769e0f8108463c35a6937a9d634ab19fee45100a',
+398 silly install resolved     bugs: { url: 'https://github.com/dougwilson/nodejs-depd/issues' },
+398 silly install resolved     homepage: 'https://github.com/dougwilson/nodejs-depd',
+398 silly install resolved     _id: 'depd@1.0.1',
+398 silly install resolved     _shasum: '80aec64c9d6d97e65cc2a9caa93c0aa6abf73aaa',
+398 silly install resolved     _from: 'depd@>=1.0.1 <1.1.0',
+398 silly install resolved     _npmVersion: '1.4.28',
+398 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+398 silly install resolved     maintainers: [ [Object] ],
+398 silly install resolved     dist:
+398 silly install resolved      { shasum: '80aec64c9d6d97e65cc2a9caa93c0aa6abf73aaa',
+398 silly install resolved        tarball: 'http://registry.npmjs.org/depd/-/depd-1.0.1.tgz' },
+398 silly install resolved     directories: {},
+398 silly install resolved     _resolved: 'https://registry.npmjs.org/depd/-/depd-1.0.1.tgz' },
+398 silly install resolved   { name: 'raw-body',
+398 silly install resolved     description: 'Get and validate the raw body of a readable stream.',
+398 silly install resolved     version: '1.3.4',
+398 silly install resolved     author:
+398 silly install resolved      { name: 'Jonathan Ong',
+398 silly install resolved        email: 'me@jongleberry.com',
+398 silly install resolved        url: 'http://jongleberry.com' },
+398 silly install resolved     contributors: [ [Object], [Object] ],
+398 silly install resolved     license: 'MIT',
+398 silly install resolved     repository: { type: 'git', url: 'https://github.com/stream-utils/raw-body' },
+398 silly install resolved     dependencies: { bytes: '1.0.0', 'iconv-lite': '0.4.8' },
+398 silly install resolved     devDependencies:
+398 silly install resolved      { istanbul: '0.3.9',
+398 silly install resolved        mocha: '~2.2.4',
+398 silly install resolved        'readable-stream': '~1.0.33',
+398 silly install resolved        through2: '0.6.5' },
+398 silly install resolved     engines: { node: '>= 0.8.0' },
+398 silly install resolved     files: [ 'HISTORY.md', 'LICENSE', 'README.md', 'index.js' ],
+398 silly install resolved     scripts:
+398 silly install resolved      { test: 'mocha --reporter spec --bail test/',
+398 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/',
+398 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec test/' },
+398 silly install resolved     gitHead: 'cb1e3ed184c07198085cd59278ad93c6787ceb22',
+398 silly install resolved     bugs: { url: 'https://github.com/stream-utils/raw-body/issues' },
+398 silly install resolved     homepage: 'https://github.com/stream-utils/raw-body',
+398 silly install resolved     _id: 'raw-body@1.3.4',
+398 silly install resolved     _shasum: 'ccc7ddfc46b72861cdd5bb433c840b70b6f27f54',
+398 silly install resolved     _from: 'raw-body@1.3.4',
+398 silly install resolved     _npmVersion: '1.4.28',
+398 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+398 silly install resolved     maintainers: [ [Object], [Object] ],
+398 silly install resolved     dist:
+398 silly install resolved      { shasum: 'ccc7ddfc46b72861cdd5bb433c840b70b6f27f54',
+398 silly install resolved        tarball: 'http://registry.npmjs.org/raw-body/-/raw-body-1.3.4.tgz' },
+398 silly install resolved     directories: {},
+398 silly install resolved     _resolved: 'https://registry.npmjs.org/raw-body/-/raw-body-1.3.4.tgz' },
+398 silly install resolved   { name: 'type-is',
+398 silly install resolved     description: 'Infer the content-type of a request.',
+398 silly install resolved     version: '1.6.1',
+398 silly install resolved     author:
+398 silly install resolved      { name: 'Jonathan Ong',
+398 silly install resolved        email: 'me@jongleberry.com',
+398 silly install resolved        url: 'http://jongleberry.com' },
+398 silly install resolved     contributors: [ [Object] ],
+398 silly install resolved     license: 'MIT',
+398 silly install resolved     repository: { type: 'git', url: 'https://github.com/jshttp/type-is' },
+398 silly install resolved     dependencies: { 'media-typer': '0.3.0', 'mime-types': '~2.0.10' },
+398 silly install resolved     devDependencies: { istanbul: '0.3.7', mocha: '~1.21.5' },
+398 silly install resolved     engines: { node: '>= 0.6' },
+398 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'index.js' ],
+398 silly install resolved     scripts:
+398 silly install resolved      { test: 'mocha --reporter spec --check-leaks --bail test/',
+398 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+398 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+398 silly install resolved     keywords: [ 'content', 'type', 'checking' ],
+398 silly install resolved     gitHead: '339a7df4d8fed268b0f12d0fdab91d39f88d6f4e',
+398 silly install resolved     bugs: { url: 'https://github.com/jshttp/type-is/issues' },
+398 silly install resolved     homepage: 'https://github.com/jshttp/type-is',
+398 silly install resolved     _id: 'type-is@1.6.1',
+398 silly install resolved     _shasum: '49addecb0f6831cbc1d34ba929f0f3a4f21b0f2e',
+398 silly install resolved     _from: 'type-is@>=1.6.1 <1.7.0',
+398 silly install resolved     _npmVersion: '1.4.28',
+398 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+398 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+398 silly install resolved     dist:
+398 silly install resolved      { shasum: '49addecb0f6831cbc1d34ba929f0f3a4f21b0f2e',
+398 silly install resolved        tarball: 'http://registry.npmjs.org/type-is/-/type-is-1.6.1.tgz' },
+398 silly install resolved     directories: {},
+398 silly install resolved     _resolved: 'https://registry.npmjs.org/type-is/-/type-is-1.6.1.tgz' },
+398 silly install resolved   { name: 'iconv-lite',
+398 silly install resolved     description: 'Convert character encodings in pure javascript.',
+398 silly install resolved     version: '0.4.8',
+398 silly install resolved     license: 'MIT',
+398 silly install resolved     keywords: [ 'iconv', 'convert', 'charset', 'icu' ],
+398 silly install resolved     author: { name: 'Alexander Shtuchkin', email: 'ashtuchkin@gmail.com' },
+398 silly install resolved     contributors:
+398 silly install resolved      [ [Object],
+398 silly install resolved        [Object],
+398 silly install resolved        [Object],
+398 silly install resolved        [Object],
+398 silly install resolved        [Object],
+398 silly install resolved        [Object],
+398 silly install resolved        [Object],
+398 silly install resolved        [Object],
+398 silly install resolved        [Object],
+398 silly install resolved        [Object],
+398 silly install resolved        [Object],
+398 silly install resolved        [Object] ],
+398 silly install resolved     main: './lib/index.js',
+398 silly install resolved     homepage: 'https://github.com/ashtuchkin/iconv-lite',
+398 silly install resolved     bugs: { url: 'https://github.com/ashtuchkin/iconv-lite/issues' },
+398 silly install resolved     repository:
+398 silly install resolved      { type: 'git',
+398 silly install resolved        url: 'git://github.com/ashtuchkin/iconv-lite.git' },
+398 silly install resolved     engines: { node: '>=0.8.0' },
+398 silly install resolved     scripts:
+398 silly install resolved      { coverage: 'istanbul cover _mocha -- --grep .',
+398 silly install resolved        'coverage-open': 'open coverage/lcov-report/index.html',
+398 silly install resolved        test: 'mocha --reporter spec --grep .' },
+398 silly install resolved     browser: { './extend-node': false, './streams': false },
+398 silly install resolved     devDependencies:
+398 silly install resolved      { mocha: '*',
+398 silly install resolved        request: '2.47',
+398 silly install resolved        unorm: '*',
+398 silly install resolved        errto: '*',
+398 silly install resolved        async: '*',
+398 silly install resolved        istanbul: '*',
+398 silly install resolved        iconv: '2.1.4' },
+398 silly install resolved     gitHead: '3dc7d0cb0e223b29634ecb7bff46910c8107ab3d',
+398 silly install resolved     _id: 'iconv-lite@0.4.8',
+398 silly install resolved     _shasum: 'c6019a7595f2cefca702eab694a010bcd9298d20',
+398 silly install resolved     _from: 'iconv-lite@0.4.8',
+398 silly install resolved     _npmVersion: '2.7.4',
+398 silly install resolved     _nodeVersion: '0.12.2',
+398 silly install resolved     _npmUser: { name: 'ashtuchkin', email: 'ashtuchkin@gmail.com' },
+398 silly install resolved     maintainers: [ [Object] ],
+398 silly install resolved     dist:
+398 silly install resolved      { shasum: 'c6019a7595f2cefca702eab694a010bcd9298d20',
+398 silly install resolved        tarball: 'http://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.8.tgz' },
+398 silly install resolved     directories: {},
+398 silly install resolved     _resolved: 'https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.8.tgz' } ]
+399 info install debug@2.1.3 into /Users/davidjokinen/FTP/game/node_modules/body-parser
+400 info install qs@2.4.1 into /Users/davidjokinen/FTP/game/node_modules/body-parser
+401 info install bytes@1.0.0 into /Users/davidjokinen/FTP/game/node_modules/body-parser
+402 info install content-type@1.0.1 into /Users/davidjokinen/FTP/game/node_modules/body-parser
+403 info install on-finished@2.2.1 into /Users/davidjokinen/FTP/game/node_modules/body-parser
+404 info install depd@1.0.1 into /Users/davidjokinen/FTP/game/node_modules/body-parser
+405 info install raw-body@1.3.4 into /Users/davidjokinen/FTP/game/node_modules/body-parser
+406 info install type-is@1.6.1 into /Users/davidjokinen/FTP/game/node_modules/body-parser
+407 info install iconv-lite@0.4.8 into /Users/davidjokinen/FTP/game/node_modules/body-parser
+408 info installOne debug@2.1.3
+409 verbose installOne of debug to /Users/davidjokinen/FTP/game/node_modules/body-parser not in flight; installing
+410 info installOne qs@2.4.1
+411 verbose installOne of qs to /Users/davidjokinen/FTP/game/node_modules/body-parser not in flight; installing
+412 info installOne bytes@1.0.0
+413 verbose installOne of bytes to /Users/davidjokinen/FTP/game/node_modules/body-parser not in flight; installing
+414 info installOne content-type@1.0.1
+415 verbose installOne of content-type to /Users/davidjokinen/FTP/game/node_modules/body-parser not in flight; installing
+416 info installOne on-finished@2.2.1
+417 verbose installOne of on-finished to /Users/davidjokinen/FTP/game/node_modules/body-parser not in flight; installing
+418 info installOne depd@1.0.1
+419 verbose installOne of depd to /Users/davidjokinen/FTP/game/node_modules/body-parser not in flight; installing
+420 info installOne raw-body@1.3.4
+421 verbose installOne of raw-body to /Users/davidjokinen/FTP/game/node_modules/body-parser not in flight; installing
+422 info installOne type-is@1.6.1
+423 verbose installOne of type-is to /Users/davidjokinen/FTP/game/node_modules/body-parser not in flight; installing
+424 info installOne iconv-lite@0.4.8
+425 verbose installOne of iconv-lite to /Users/davidjokinen/FTP/game/node_modules/body-parser not in flight; installing
+426 verbose lock using /Users/davidjokinen/.npm/_locks/debug-bd80b2864c9dc85c.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug
+427 verbose lock using /Users/davidjokinen/.npm/_locks/qs-cfaa8ac2c93e0981.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/qs
+428 verbose lock using /Users/davidjokinen/.npm/_locks/bytes-98928e74ebb5c701.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/bytes
+429 verbose lock using /Users/davidjokinen/.npm/_locks/content-type-c4692ee0c3df3fe1.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/content-type
+430 verbose lock using /Users/davidjokinen/.npm/_locks/on-finished-f09ced85ecdb80f8.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished
+431 verbose lock using /Users/davidjokinen/.npm/_locks/depd-df1e6a59d7d5d9bd.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/depd
+432 silly install write writing debug 2.1.3 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug
+433 silly cache addNamed cb debug@2.1.3
+434 verbose unbuild node_modules/body-parser/node_modules/debug
+435 silly install write writing qs 2.4.1 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/qs
+436 silly cache addNamed cb qs@2.4.1
+437 verbose unbuild node_modules/body-parser/node_modules/qs
+438 silly install write writing bytes 1.0.0 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/bytes
+439 silly cache addNamed cb bytes@1.0.0
+440 verbose unbuild node_modules/body-parser/node_modules/bytes
+441 silly install write writing content-type 1.0.1 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/content-type
+442 silly install write writing on-finished 2.2.1 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished
+443 silly install write writing depd 1.0.1 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/depd
+444 verbose lock using /Users/davidjokinen/.npm/_locks/raw-body-3138a393d87a35ee.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/raw-body
+445 verbose lock using /Users/davidjokinen/.npm/_locks/iconv-lite-8a6e14b087402f4b.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/iconv-lite
+446 verbose lock using /Users/davidjokinen/.npm/_locks/type-is-d95a60d54d3e8fb7.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is
+447 silly install write writing raw-body 1.3.4 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/raw-body
+448 silly install write writing iconv-lite 0.4.8 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/iconv-lite
+449 silly install write writing type-is 1.6.1 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is
+450 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug
+451 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/qs
+452 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/bytes
+453 verbose tar unpack /Users/davidjokinen/.npm/debug/2.1.3/package.tgz
+454 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug
+455 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug
+456 verbose tar unpack /Users/davidjokinen/.npm/qs/2.4.1/package.tgz
+457 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/qs
+458 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/qs
+459 verbose tar unpack /Users/davidjokinen/.npm/bytes/1.0.0/package.tgz
+460 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/bytes
+461 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/bytes
+462 silly gunzTarPerm modes [ '755', '644' ]
+463 silly gunzTarPerm modes [ '755', '644' ]
+464 silly gunzTarPerm modes [ '755', '644' ]
+465 silly cache addNamed cb content-type@1.0.1
+466 verbose unbuild node_modules/body-parser/node_modules/content-type
+467 silly cache addNamed cb on-finished@2.2.1
+468 verbose unbuild node_modules/body-parser/node_modules/on-finished
+469 silly cache addNamed cb depd@1.0.1
+470 verbose unbuild node_modules/body-parser/node_modules/depd
+471 silly cache addNamed cb raw-body@1.3.4
+472 verbose unbuild node_modules/body-parser/node_modules/raw-body
+473 silly cache addNamed cb iconv-lite@0.4.8
+474 verbose unbuild node_modules/body-parser/node_modules/iconv-lite
+475 silly cache addNamed cb type-is@1.6.1
+476 verbose unbuild node_modules/body-parser/node_modules/type-is
+477 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/content-type
+478 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished
+479 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/depd
+480 verbose tar unpack /Users/davidjokinen/.npm/content-type/1.0.1/package.tgz
+481 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/content-type
+482 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/content-type
+483 verbose tar unpack /Users/davidjokinen/.npm/on-finished/2.2.1/package.tgz
+484 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished
+485 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished
+486 verbose tar unpack /Users/davidjokinen/.npm/depd/1.0.1/package.tgz
+487 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/depd
+488 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/depd
+489 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/raw-body
+490 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/iconv-lite
+491 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is
+492 silly gunzTarPerm extractEntry package.json
+493 silly gunzTarPerm modes [ '755', '644' ]
+494 silly gunzTarPerm modes [ '755', '644' ]
+495 silly gunzTarPerm modes [ '755', '644' ]
+496 verbose tar unpack /Users/davidjokinen/.npm/raw-body/1.3.4/package.tgz
+497 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/raw-body
+498 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/raw-body
+499 verbose tar unpack /Users/davidjokinen/.npm/iconv-lite/0.4.8/package.tgz
+500 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/iconv-lite
+501 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/iconv-lite
+502 verbose tar unpack /Users/davidjokinen/.npm/type-is/1.6.1/package.tgz
+503 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is
+504 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is
+505 silly gunzTarPerm extractEntry package.json
+506 silly gunzTarPerm extractEntry package.json
+507 silly gunzTarPerm modes [ '755', '644' ]
+508 silly gunzTarPerm modes [ '755', '644' ]
+509 silly gunzTarPerm modes [ '755', '644' ]
+510 silly gunzTarPerm extractEntry .npmignore
+511 silly gunzTarPerm extractEntry node.js
+512 silly gunzTarPerm extractEntry .npmignore
+513 silly gunzTarPerm extractEntry README.md
+514 silly gunzTarPerm extractEntry .npmignore
+515 silly gunzTarPerm extractEntry index.js
+516 silly gunzTarPerm extractEntry package.json
+517 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+518 silly gunzTarPerm extractEntry package.json
+519 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+520 silly gunzTarPerm extractEntry package.json
+521 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+522 silly gunzTarPerm extractEntry package.json
+523 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+524 silly gunzTarPerm extractEntry package.json
+525 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+526 silly gunzTarPerm extractEntry package.json
+527 silly gunzTarPerm extractEntry README.md
+528 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+529 silly gunzTarPerm extractEntry LICENSE
+530 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+531 silly gunzTarPerm extractEntry README.md
+532 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+533 silly gunzTarPerm extractEntry LICENSE
+534 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+535 silly gunzTarPerm extractEntry LICENSE
+536 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+537 silly gunzTarPerm extractEntry index.js
+538 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+539 silly gunzTarPerm extractEntry README.md
+540 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+541 silly gunzTarPerm extractEntry LICENSE
+542 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+543 silly gunzTarPerm extractEntry README.md
+544 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+545 silly gunzTarPerm extractEntry LICENSE
+546 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+547 silly gunzTarPerm extractEntry .npmignore
+548 silly gunzTarPerm extractEntry README.md
+549 silly gunzTarPerm extractEntry debug.js
+550 silly gunzTarPerm extractEntry browser.js
+551 silly gunzTarPerm extractEntry History.md
+552 silly gunzTarPerm extractEntry Makefile
+553 silly gunzTarPerm extractEntry LICENSE
+554 silly gunzTarPerm extractEntry index.js
+555 silly gunzTarPerm extractEntry index.js
+556 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+557 silly gunzTarPerm extractEntry HISTORY.md
+558 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+559 silly gunzTarPerm extractEntry index.js
+560 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+561 silly gunzTarPerm extractEntry HISTORY.md
+562 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+563 silly gunzTarPerm extractEntry History.md
+564 silly gunzTarPerm modified mode [ 'History.md', 438, 420 ]
+565 silly gunzTarPerm extractEntry Readme.md
+566 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+567 silly gunzTarPerm extractEntry lib/compat/buffer-concat.js
+568 silly gunzTarPerm modified mode [ 'lib/compat/buffer-concat.js', 438, 420 ]
+569 silly gunzTarPerm extractEntry lib/compat/callsite-tostring.js
+570 silly gunzTarPerm modified mode [ 'lib/compat/callsite-tostring.js', 438, 420 ]
+571 silly gunzTarPerm extractEntry lib/compat/index.js
+572 silly gunzTarPerm modified mode [ 'lib/compat/index.js', 438, 420 ]
+573 silly gunzTarPerm extractEntry index.js
+574 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+575 silly gunzTarPerm extractEntry HISTORY.md
+576 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+577 silly gunzTarPerm extractEntry index.js
+578 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+579 silly gunzTarPerm extractEntry HISTORY.md
+580 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+581 silly gunzTarPerm extractEntry Readme.md
+582 silly gunzTarPerm extractEntry component.json
+583 silly gunzTarPerm extractEntry Readme.md
+584 silly gunzTarPerm extractEntry CHANGELOG.md
+585 silly gunzTarPerm extractEntry CONTRIBUTING.md
+586 silly gunzTarPerm extractEntry Makefile
+587 silly gunzTarPerm extractEntry .jshintignore
+588 silly gunzTarPerm extractEntry .jshintrc
+589 silly gunzTarPerm extractEntry lib/index.js
+590 silly gunzTarPerm extractEntry lib/parse.js
+591 silly gunzTarPerm extractEntry lib/stringify.js
+592 silly gunzTarPerm extractEntry lib/utils.js
+593 silly gunzTarPerm extractEntry .travis.yml
+594 silly gunzTarPerm extractEntry test/parse.js
+595 silly gunzTarPerm extractEntry test/stringify.js
+596 silly gunzTarPerm extractEntry LICENSE
+597 silly gunzTarPerm extractEntry encodings/dbcs-codec.js
+598 silly gunzTarPerm extractEntry encodings/dbcs-data.js
+599 silly gunzTarPerm extractEntry bower.json
+600 silly gunzTarPerm extractEntry .jshintrc
+601 silly gunzTarPerm extractEntry encodings/index.js
+602 silly gunzTarPerm extractEntry encodings/internal.js
+603 silly gunzTarPerm extractEntry component.json
+604 silly gunzTarPerm extractEntry Makefile
+605 silly gunzTarPerm extractEntry encodings/sbcs-codec.js
+606 silly gunzTarPerm extractEntry encodings/sbcs-data-generated.js
+607 silly gunzTarPerm extractEntry encodings/sbcs-data.js
+608 silly gunzTarPerm extractEntry History.md
+609 info preinstall bytes@1.0.0
+610 info preinstall content-type@1.0.1
+611 info preinstall on-finished@2.2.1
+612 silly install resolved []
+613 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/bytes
+614 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/bytes
+615 verbose linkStuff [ false,
+615 verbose linkStuff   false,
+615 verbose linkStuff   false,
+615 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules' ]
+616 info linkStuff bytes@1.0.0
+617 silly prepareForInstallMany adding ee-first@1.1.0 from on-finished dependencies
+618 verbose linkBins bytes@1.0.0
+619 verbose linkMans bytes@1.0.0
+620 verbose rebuildBundles bytes@1.0.0
+621 silly install resolved []
+622 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/content-type
+623 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/content-type
+624 verbose linkStuff [ false,
+624 verbose linkStuff   false,
+624 verbose linkStuff   false,
+624 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules' ]
+625 info linkStuff content-type@1.0.1
+626 info install bytes@1.0.0
+627 info preinstall type-is@1.6.1
+628 silly cache add args [ 'ee-first@1.1.0', null ]
+629 verbose cache add spec ee-first@1.1.0
+630 silly cache add parsed spec { raw: 'ee-first@1.1.0',
+630 silly cache add   scope: null,
+630 silly cache add   name: 'ee-first',
+630 silly cache add   rawSpec: '1.1.0',
+630 silly cache add   spec: '1.1.0',
+630 silly cache add   type: 'version' }
+631 verbose addNamed ee-first@1.1.0
+632 silly addNamed semver.valid 1.1.0
+633 silly addNamed semver.validRange 1.1.0
+634 silly mapToRegistry name ee-first
+635 silly mapToRegistry using default registry
+636 silly mapToRegistry registry https://registry.npmjs.org/
+637 silly mapToRegistry uri https://registry.npmjs.org/ee-first
+638 verbose addNameVersion registry:https://registry.npmjs.org/ee-first not in flight; fetching
+639 verbose linkBins content-type@1.0.1
+640 verbose linkMans content-type@1.0.1
+641 verbose rebuildBundles content-type@1.0.1
+642 info postinstall bytes@1.0.0
+643 info install content-type@1.0.1
+644 info preinstall raw-body@1.3.4
+645 silly prepareForInstallMany adding media-typer@0.3.0 from type-is dependencies
+646 silly prepareForInstallMany adding mime-types@~2.0.10 from type-is dependencies
+647 info postinstall content-type@1.0.1
+648 verbose unlock done using /Users/davidjokinen/.npm/_locks/bytes-98928e74ebb5c701.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/bytes
+649 verbose request uri https://registry.npmjs.org/ee-first
+650 verbose request no auth needed
+651 info attempt registry request try #1 at 2:25:31 PM
+652 verbose etag "BL7A7R8C92I3KEN65Q4PCXY8X"
+653 http request GET https://registry.npmjs.org/ee-first
+654 silly cache add args [ 'media-typer@0.3.0', null ]
+655 verbose cache add spec media-typer@0.3.0
+656 silly cache add parsed spec { raw: 'media-typer@0.3.0',
+656 silly cache add   scope: null,
+656 silly cache add   name: 'media-typer',
+656 silly cache add   rawSpec: '0.3.0',
+656 silly cache add   spec: '0.3.0',
+656 silly cache add   type: 'version' }
+657 verbose addNamed media-typer@0.3.0
+658 silly addNamed semver.valid 0.3.0
+659 silly addNamed semver.validRange 0.3.0
+660 silly mapToRegistry name media-typer
+661 silly mapToRegistry using default registry
+662 silly mapToRegistry registry https://registry.npmjs.org/
+663 silly mapToRegistry uri https://registry.npmjs.org/media-typer
+664 verbose addNameVersion registry:https://registry.npmjs.org/media-typer not in flight; fetching
+665 silly cache add args [ 'mime-types@~2.0.10', null ]
+666 verbose cache add spec mime-types@~2.0.10
+667 silly cache add parsed spec { raw: 'mime-types@~2.0.10',
+667 silly cache add   scope: null,
+667 silly cache add   name: 'mime-types',
+667 silly cache add   rawSpec: '~2.0.10',
+667 silly cache add   spec: '>=2.0.10 <2.1.0',
+667 silly cache add   type: 'range' }
+668 verbose addNamed mime-types@>=2.0.10 <2.1.0
+669 silly addNamed semver.valid null
+670 silly addNamed semver.validRange >=2.0.10 <2.1.0
+671 silly addNameRange { name: 'mime-types', range: '>=2.0.10 <2.1.0', hasData: false }
+672 silly mapToRegistry name mime-types
+673 silly mapToRegistry using default registry
+674 silly mapToRegistry registry https://registry.npmjs.org/
+675 silly mapToRegistry uri https://registry.npmjs.org/mime-types
+676 verbose addNameRange registry:https://registry.npmjs.org/mime-types not in flight; fetching
+677 silly install resolved []
+678 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/raw-body
+679 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/raw-body
+680 verbose linkStuff [ false,
+680 verbose linkStuff   false,
+680 verbose linkStuff   false,
+680 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules' ]
+681 info linkStuff raw-body@1.3.4
+682 verbose unlock done using /Users/davidjokinen/.npm/_locks/content-type-c4692ee0c3df3fe1.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/content-type
+683 silly gunzTarPerm extractEntry encodings/utf16.js
+684 verbose linkBins raw-body@1.3.4
+685 verbose linkMans raw-body@1.3.4
+686 verbose rebuildBundles raw-body@1.3.4
+687 info install raw-body@1.3.4
+688 verbose request uri https://registry.npmjs.org/media-typer
+689 verbose request no auth needed
+690 info attempt registry request try #1 at 2:25:31 PM
+691 verbose etag "EBBA17SMBE80K6FCTCN6G8KK3"
+692 http request GET https://registry.npmjs.org/media-typer
+693 verbose request uri https://registry.npmjs.org/mime-types
+694 verbose request no auth needed
+695 info attempt registry request try #1 at 2:25:31 PM
+696 verbose etag "D48KYGEH6ANBWYSE5K1OA6B86"
+697 http request GET https://registry.npmjs.org/mime-types
+698 info postinstall raw-body@1.3.4
+699 verbose unlock done using /Users/davidjokinen/.npm/_locks/raw-body-3138a393d87a35ee.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/raw-body
+700 silly gunzTarPerm extractEntry encodings/utf7.js
+701 silly gunzTarPerm extractEntry encodings/tables/big5-added.json
+702 silly gunzTarPerm extractEntry encodings/tables/cp936.json
+703 silly gunzTarPerm extractEntry encodings/tables/cp949.json
+704 silly gunzTarPerm extractEntry encodings/tables/cp950.json
+705 silly gunzTarPerm extractEntry encodings/tables/eucjp.json
+706 info preinstall depd@1.0.1
+707 silly install resolved []
+708 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/depd
+709 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/depd
+710 verbose linkStuff [ false,
+710 verbose linkStuff   false,
+710 verbose linkStuff   false,
+710 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules' ]
+711 info linkStuff depd@1.0.1
+712 verbose linkBins depd@1.0.1
+713 verbose linkMans depd@1.0.1
+714 verbose rebuildBundles depd@1.0.1
+715 info install depd@1.0.1
+716 silly gunzTarPerm extractEntry encodings/tables/gb18030-ranges.json
+717 info preinstall debug@2.1.3
+718 info postinstall depd@1.0.1
+719 silly prepareForInstallMany adding ms@0.7.0 from debug dependencies
+720 verbose unlock done using /Users/davidjokinen/.npm/_locks/depd-df1e6a59d7d5d9bd.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/depd
+721 silly cache add args [ 'ms@0.7.0', null ]
+722 verbose cache add spec ms@0.7.0
+723 silly cache add parsed spec { raw: 'ms@0.7.0',
+723 silly cache add   scope: null,
+723 silly cache add   name: 'ms',
+723 silly cache add   rawSpec: '0.7.0',
+723 silly cache add   spec: '0.7.0',
+723 silly cache add   type: 'version' }
+724 verbose addNamed ms@0.7.0
+725 silly addNamed semver.valid 0.7.0
+726 silly addNamed semver.validRange 0.7.0
+727 silly mapToRegistry name ms
+728 silly mapToRegistry using default registry
+729 silly mapToRegistry registry https://registry.npmjs.org/
+730 silly mapToRegistry uri https://registry.npmjs.org/ms
+731 verbose addNameVersion registry:https://registry.npmjs.org/ms not in flight; fetching
+732 verbose request uri https://registry.npmjs.org/ms
+733 verbose request no auth needed
+734 info attempt registry request try #1 at 2:25:31 PM
+735 verbose etag "1FWMRYV9JSE343ZCTQ1RJ58Y1"
+736 http request GET https://registry.npmjs.org/ms
+737 silly gunzTarPerm extractEntry encodings/tables/gbk-added.json
+738 silly gunzTarPerm extractEntry encodings/tables/shiftjis.json
+739 silly gunzTarPerm extractEntry .travis.yml
+740 silly gunzTarPerm extractEntry lib/extend-node.js
+741 silly gunzTarPerm extractEntry lib/index.js
+742 silly gunzTarPerm extractEntry lib/streams.js
+743 info preinstall qs@2.4.1
+744 silly install resolved []
+745 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/qs
+746 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/qs
+747 verbose linkStuff [ false,
+747 verbose linkStuff   false,
+747 verbose linkStuff   false,
+747 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules' ]
+748 info linkStuff qs@2.4.1
+749 verbose linkBins qs@2.4.1
+750 verbose linkMans qs@2.4.1
+751 verbose rebuildBundles qs@2.4.1
+752 silly gunzTarPerm extractEntry Changelog.md
+753 info install qs@2.4.1
+754 info postinstall qs@2.4.1
+755 verbose unlock done using /Users/davidjokinen/.npm/_locks/qs-cfaa8ac2c93e0981.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/qs
+756 http 304 https://registry.npmjs.org/ee-first
+757 silly get cb [ 304,
+757 silly get   { date: 'Thu, 07 May 2015 18:25:29 GMT',
+757 silly get     via: '1.1 varnish',
+757 silly get     'last-modified': 'Thu, 07 May 2015 18:24:41 GMT',
+757 silly get     'cache-control': 'max-age=60',
+757 silly get     etag: '"BL7A7R8C92I3KEN65Q4PCXY8X"',
+757 silly get     age: '55',
+757 silly get     connection: 'keep-alive',
+757 silly get     'x-served-by': 'cache-iad2132-IAD',
+757 silly get     'x-cache': 'HIT',
+757 silly get     'x-cache-hits': '2',
+757 silly get     'x-timer': 'S1431023129.904579,VS0,VE0',
+757 silly get     vary: 'Accept' } ]
+758 verbose etag https://registry.npmjs.org/ee-first from cache
+759 verbose get saving ee-first to /Users/davidjokinen/.npm/registry.npmjs.org/ee-first/.cache.json
+760 silly cache afterAdd ee-first@1.1.0
+761 verbose afterAdd /Users/davidjokinen/.npm/ee-first/1.1.0/package/package.json not in flight; writing
+762 http 304 https://registry.npmjs.org/mime-types
+763 silly get cb [ 304,
+763 silly get   { date: 'Thu, 07 May 2015 18:25:29 GMT',
+763 silly get     via: '1.1 varnish',
+763 silly get     'last-modified': 'Thu, 07 May 2015 18:25:14 GMT',
+763 silly get     'cache-control': 'max-age=60',
+763 silly get     etag: '"D48KYGEH6ANBWYSE5K1OA6B86"',
+763 silly get     age: '21',
+763 silly get     connection: 'keep-alive',
+763 silly get     'x-served-by': 'cache-iad2121-IAD',
+763 silly get     'x-cache': 'HIT',
+763 silly get     'x-cache-hits': '4',
+763 silly get     'x-timer': 'S1431023129.909176,VS0,VE0',
+763 silly get     vary: 'Accept' } ]
+764 verbose etag https://registry.npmjs.org/mime-types from cache
+765 verbose get saving mime-types to /Users/davidjokinen/.npm/registry.npmjs.org/mime-types/.cache.json
+766 verbose afterAdd /Users/davidjokinen/.npm/ee-first/1.1.0/package/package.json written
+767 silly install resolved [ { name: 'ee-first',
+767 silly install resolved     description: 'return the first event in a set of ee/event pairs',
+767 silly install resolved     version: '1.1.0',
+767 silly install resolved     author:
+767 silly install resolved      { name: 'Jonathan Ong',
+767 silly install resolved        email: 'me@jongleberry.com',
+767 silly install resolved        url: 'http://jongleberry.com' },
+767 silly install resolved     contributors: [ [Object] ],
+767 silly install resolved     license: 'MIT',
+767 silly install resolved     repository: { type: 'git', url: 'https://github.com/jonathanong/ee-first' },
+767 silly install resolved     devDependencies: { istanbul: '0.3.2', mocha: '1' },
+767 silly install resolved     files: [ 'index.js', 'LICENSE' ],
+767 silly install resolved     scripts:
+767 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+767 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+767 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+767 silly install resolved     gitHead: 'a6412004da4745941af2fc98ec30c8da570da7ea',
+767 silly install resolved     bugs: { url: 'https://github.com/jonathanong/ee-first/issues' },
+767 silly install resolved     homepage: 'https://github.com/jonathanong/ee-first',
+767 silly install resolved     _id: 'ee-first@1.1.0',
+767 silly install resolved     _shasum: '6a0d7c6221e490feefd92ec3f441c9ce8cd097f4',
+767 silly install resolved     _from: 'ee-first@1.1.0',
+767 silly install resolved     _npmVersion: '1.4.21',
+767 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+767 silly install resolved     maintainers: [ [Object], [Object] ],
+767 silly install resolved     dist:
+767 silly install resolved      { shasum: '6a0d7c6221e490feefd92ec3f441c9ce8cd097f4',
+767 silly install resolved        tarball: 'http://registry.npmjs.org/ee-first/-/ee-first-1.1.0.tgz' },
+767 silly install resolved     directories: {},
+767 silly install resolved     _resolved: 'https://registry.npmjs.org/ee-first/-/ee-first-1.1.0.tgz',
+767 silly install resolved     readme: 'ERROR: No README data found!' } ]
+768 info install ee-first@1.1.0 into /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished
+769 info installOne ee-first@1.1.0
+770 verbose installOne of ee-first to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished not in flight; installing
+771 verbose lock using /Users/davidjokinen/.npm/_locks/ee-first-ebca8993902c4a4d.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first
+772 silly install write writing ee-first 1.1.0 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first
+773 silly cache addNamed cb ee-first@1.1.0
+774 verbose unbuild node_modules/body-parser/node_modules/on-finished/node_modules/ee-first
+775 silly addNameRange number 2 { name: 'mime-types', range: '>=2.0.10 <2.1.0', hasData: true }
+776 silly addNameRange versions [ 'mime-types',
+776 silly addNameRange   [ '0.1.0',
+776 silly addNameRange     '1.0.0',
+776 silly addNameRange     '1.0.1',
+776 silly addNameRange     '1.0.2',
+776 silly addNameRange     '2.0.0',
+776 silly addNameRange     '2.0.1',
+776 silly addNameRange     '2.0.2',
+776 silly addNameRange     '2.0.3',
+776 silly addNameRange     '2.0.4',
+776 silly addNameRange     '2.0.5',
+776 silly addNameRange     '2.0.6',
+776 silly addNameRange     '2.0.7',
+776 silly addNameRange     '2.0.8',
+776 silly addNameRange     '2.0.9',
+776 silly addNameRange     '2.0.10',
+776 silly addNameRange     '2.0.11' ] ]
+777 verbose addNamed mime-types@2.0.11
+778 silly addNamed semver.valid 2.0.11
+779 silly addNamed semver.validRange 2.0.11
+780 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first
+781 verbose tar unpack /Users/davidjokinen/.npm/ee-first/1.1.0/package.tgz
+782 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first
+783 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first
+784 silly gunzTarPerm modes [ '755', '644' ]
+785 silly cache afterAdd mime-types@2.0.11
+786 verbose afterAdd /Users/davidjokinen/.npm/mime-types/2.0.11/package/package.json not in flight; writing
+787 silly gunzTarPerm extractEntry package.json
+788 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+789 silly gunzTarPerm extractEntry README.md
+790 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+791 silly gunzTarPerm extractEntry LICENSE
+792 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+793 verbose afterAdd /Users/davidjokinen/.npm/mime-types/2.0.11/package/package.json written
+794 silly gunzTarPerm extractEntry index.js
+795 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+796 http 304 https://registry.npmjs.org/media-typer
+797 silly get cb [ 304,
+797 silly get   { date: 'Thu, 07 May 2015 18:25:29 GMT',
+797 silly get     via: '1.1 varnish',
+797 silly get     'last-modified': 'Thu, 07 May 2015 18:25:29 GMT',
+797 silly get     'cache-control': 'max-age=60',
+797 silly get     etag: '"EBBA17SMBE80K6FCTCN6G8KK3"',
+797 silly get     age: '4',
+797 silly get     connection: 'keep-alive',
+797 silly get     'x-served-by': 'cache-iad2128-IAD',
+797 silly get     'x-cache': 'HIT',
+797 silly get     'x-cache-hits': '1',
+797 silly get     'x-timer': 'S1431023129.932620,VS0,VE0',
+797 silly get     vary: 'Accept' } ]
+798 verbose etag https://registry.npmjs.org/media-typer from cache
+799 verbose get saving media-typer to /Users/davidjokinen/.npm/registry.npmjs.org/media-typer/.cache.json
+800 info preinstall ee-first@1.1.0
+801 silly install resolved []
+802 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first
+803 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first
+804 verbose linkStuff [ false,
+804 verbose linkStuff   false,
+804 verbose linkStuff   false,
+804 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished/node_modules' ]
+805 info linkStuff ee-first@1.1.0
+806 silly cache afterAdd media-typer@0.3.0
+807 verbose afterAdd /Users/davidjokinen/.npm/media-typer/0.3.0/package/package.json not in flight; writing
+808 verbose linkBins ee-first@1.1.0
+809 verbose linkMans ee-first@1.1.0
+810 verbose rebuildBundles ee-first@1.1.0
+811 info install ee-first@1.1.0
+812 info postinstall ee-first@1.1.0
+813 verbose afterAdd /Users/davidjokinen/.npm/media-typer/0.3.0/package/package.json written
+814 silly install resolved [ { name: 'mime-types',
+814 silly install resolved     description: 'The ultimate javascript content-type utility.',
+814 silly install resolved     version: '2.0.11',
+814 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+814 silly install resolved     license: 'MIT',
+814 silly install resolved     keywords: [ 'mime', 'types' ],
+814 silly install resolved     repository: { type: 'git', url: 'https://github.com/jshttp/mime-types' },
+814 silly install resolved     dependencies: { 'mime-db': '~1.9.1' },
+814 silly install resolved     devDependencies: { istanbul: '0.3.9', mocha: '~1.21.5' },
+814 silly install resolved     files: [ 'HISTORY.md', 'LICENSE', 'index.js' ],
+814 silly install resolved     engines: { node: '>= 0.6' },
+814 silly install resolved     scripts:
+814 silly install resolved      { test: 'mocha --reporter spec test/test.js',
+814 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/test.js',
+814 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot test/test.js' },
+814 silly install resolved     gitHead: '4b233cfbb6704e88eca121e9d9f6e6f23957e48a',
+814 silly install resolved     bugs: { url: 'https://github.com/jshttp/mime-types/issues' },
+814 silly install resolved     homepage: 'https://github.com/jshttp/mime-types',
+814 silly install resolved     _id: 'mime-types@2.0.11',
+814 silly install resolved     _shasum: 'bf3449042799d877c815c29929d1e74760e72007',
+814 silly install resolved     _from: 'mime-types@>=2.0.10 <2.1.0',
+814 silly install resolved     _npmVersion: '1.4.28',
+814 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+814 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+814 silly install resolved     dist:
+814 silly install resolved      { shasum: 'bf3449042799d877c815c29929d1e74760e72007',
+814 silly install resolved        tarball: 'http://registry.npmjs.org/mime-types/-/mime-types-2.0.11.tgz' },
+814 silly install resolved     directories: {},
+814 silly install resolved     _resolved: 'https://registry.npmjs.org/mime-types/-/mime-types-2.0.11.tgz',
+814 silly install resolved     readme: 'ERROR: No README data found!' },
+814 silly install resolved   { name: 'media-typer',
+814 silly install resolved     description: 'Simple RFC 6838 media type parser and formatter',
+814 silly install resolved     version: '0.3.0',
+814 silly install resolved     author:
+814 silly install resolved      { name: 'Douglas Christopher Wilson',
+814 silly install resolved        email: 'doug@somethingdoug.com' },
+814 silly install resolved     license: 'MIT',
+814 silly install resolved     repository: { type: 'git', url: 'https://github.com/jshttp/media-typer' },
+814 silly install resolved     devDependencies: { istanbul: '0.3.2', mocha: '~1.21.4', should: '~4.0.4' },
+814 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'index.js' ],
+814 silly install resolved     engines: { node: '>= 0.6' },
+814 silly install resolved     scripts:
+814 silly install resolved      { test: 'mocha --reporter spec --check-leaks --bail test/',
+814 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+814 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+814 silly install resolved     gitHead: 'd49d41ffd0bb5a0655fa44a59df2ec0bfc835b16',
+814 silly install resolved     bugs: { url: 'https://github.com/jshttp/media-typer/issues' },
+814 silly install resolved     homepage: 'https://github.com/jshttp/media-typer',
+814 silly install resolved     _id: 'media-typer@0.3.0',
+814 silly install resolved     _shasum: '8710d7af0aa626f8fffa1ce00168545263255748',
+814 silly install resolved     _from: 'media-typer@0.3.0',
+814 silly install resolved     _npmVersion: '1.4.21',
+814 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+814 silly install resolved     maintainers: [ [Object] ],
+814 silly install resolved     dist:
+814 silly install resolved      { shasum: '8710d7af0aa626f8fffa1ce00168545263255748',
+814 silly install resolved        tarball: 'http://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz' },
+814 silly install resolved     directories: {},
+814 silly install resolved     _resolved: 'https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz',
+814 silly install resolved     readme: 'ERROR: No README data found!' } ]
+815 info install mime-types@2.0.11 into /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is
+816 info install media-typer@0.3.0 into /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is
+817 info installOne mime-types@2.0.11
+818 verbose installOne of mime-types to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is not in flight; installing
+819 info installOne media-typer@0.3.0
+820 verbose installOne of media-typer to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is not in flight; installing
+821 verbose unlock done using /Users/davidjokinen/.npm/_locks/ee-first-ebca8993902c4a4d.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished/node_modules/ee-first
+822 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished
+823 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished
+824 verbose linkStuff [ false,
+824 verbose linkStuff   false,
+824 verbose linkStuff   false,
+824 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules' ]
+825 info linkStuff on-finished@2.2.1
+826 verbose linkBins on-finished@2.2.1
+827 verbose linkMans on-finished@2.2.1
+828 verbose rebuildBundles on-finished@2.2.1
+829 verbose lock using /Users/davidjokinen/.npm/_locks/mime-types-c6239a26c2207c21.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types
+830 verbose rebuildBundles [ 'ee-first' ]
+831 info install on-finished@2.2.1
+832 verbose lock using /Users/davidjokinen/.npm/_locks/media-typer-8e08d2e3ad41b334.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/media-typer
+833 silly install write writing mime-types 2.0.11 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types
+834 silly cache addNamed cb mime-types@2.0.11
+835 verbose unbuild node_modules/body-parser/node_modules/type-is/node_modules/mime-types
+836 silly install write writing media-typer 0.3.0 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/media-typer
+837 silly cache addNamed cb media-typer@0.3.0
+838 verbose unbuild node_modules/body-parser/node_modules/type-is/node_modules/media-typer
+839 info postinstall on-finished@2.2.1
+840 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types
+841 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/media-typer
+842 verbose tar unpack /Users/davidjokinen/.npm/mime-types/2.0.11/package.tgz
+843 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types
+844 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types
+845 verbose tar unpack /Users/davidjokinen/.npm/media-typer/0.3.0/package.tgz
+846 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/media-typer
+847 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/media-typer
+848 silly gunzTarPerm modes [ '755', '644' ]
+849 verbose unlock done using /Users/davidjokinen/.npm/_locks/on-finished-f09ced85ecdb80f8.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/on-finished
+850 silly gunzTarPerm modes [ '755', '644' ]
+851 silly gunzTarPerm extractEntry package.json
+852 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+853 silly gunzTarPerm extractEntry package.json
+854 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+855 silly gunzTarPerm extractEntry README.md
+856 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+857 silly gunzTarPerm extractEntry LICENSE
+858 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+859 silly gunzTarPerm extractEntry README.md
+860 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+861 silly gunzTarPerm extractEntry LICENSE
+862 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+863 silly gunzTarPerm extractEntry index.js
+864 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+865 silly gunzTarPerm extractEntry HISTORY.md
+866 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+867 silly gunzTarPerm extractEntry index.js
+868 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+869 silly gunzTarPerm extractEntry HISTORY.md
+870 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+871 info preinstall mime-types@2.0.11
+872 info preinstall media-typer@0.3.0
+873 silly prepareForInstallMany adding mime-db@~1.9.1 from mime-types dependencies
+874 silly install resolved []
+875 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/media-typer
+876 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/media-typer
+877 verbose linkStuff [ false,
+877 verbose linkStuff   false,
+877 verbose linkStuff   false,
+877 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules' ]
+878 info linkStuff media-typer@0.3.0
+879 silly cache add args [ 'mime-db@~1.9.1', null ]
+880 verbose cache add spec mime-db@~1.9.1
+881 silly cache add parsed spec { raw: 'mime-db@~1.9.1',
+881 silly cache add   scope: null,
+881 silly cache add   name: 'mime-db',
+881 silly cache add   rawSpec: '~1.9.1',
+881 silly cache add   spec: '>=1.9.1 <1.10.0',
+881 silly cache add   type: 'range' }
+882 verbose addNamed mime-db@>=1.9.1 <1.10.0
+883 silly addNamed semver.valid null
+884 silly addNamed semver.validRange >=1.9.1 <1.10.0
+885 silly addNameRange { name: 'mime-db', range: '>=1.9.1 <1.10.0', hasData: false }
+886 silly mapToRegistry name mime-db
+887 silly mapToRegistry using default registry
+888 silly mapToRegistry registry https://registry.npmjs.org/
+889 silly mapToRegistry uri https://registry.npmjs.org/mime-db
+890 verbose addNameRange registry:https://registry.npmjs.org/mime-db not in flight; fetching
+891 verbose linkBins media-typer@0.3.0
+892 verbose linkMans media-typer@0.3.0
+893 verbose rebuildBundles media-typer@0.3.0
+894 info install media-typer@0.3.0
+895 info postinstall media-typer@0.3.0
+896 verbose request uri https://registry.npmjs.org/mime-db
+897 verbose request no auth needed
+898 info attempt registry request try #1 at 2:25:31 PM
+899 verbose etag "61752PNUU8H18LDTM75KS4ZEE"
+900 http request GET https://registry.npmjs.org/mime-db
+901 verbose unlock done using /Users/davidjokinen/.npm/_locks/media-typer-8e08d2e3ad41b334.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/media-typer
+902 http 304 https://registry.npmjs.org/ms
+903 silly get cb [ 304,
+903 silly get   { date: 'Thu, 07 May 2015 18:25:29 GMT',
+903 silly get     via: '1.1 varnish',
+903 silly get     'last-modified': 'Thu, 07 May 2015 18:24:44 GMT',
+903 silly get     'cache-control': 'max-age=60',
+903 silly get     etag: '"1FWMRYV9JSE343ZCTQ1RJ58Y1"',
+903 silly get     age: '47',
+903 silly get     connection: 'keep-alive',
+903 silly get     'x-served-by': 'cache-iad2133-IAD',
+903 silly get     'x-cache': 'HIT',
+903 silly get     'x-cache-hits': '3',
+903 silly get     'x-timer': 'S1431023129.976174,VS0,VE0',
+903 silly get     vary: 'Accept' } ]
+904 verbose etag https://registry.npmjs.org/ms from cache
+905 verbose get saving ms to /Users/davidjokinen/.npm/registry.npmjs.org/ms/.cache.json
+906 silly cache afterAdd ms@0.7.0
+907 verbose afterAdd /Users/davidjokinen/.npm/ms/0.7.0/package/package.json not in flight; writing
+908 verbose afterAdd /Users/davidjokinen/.npm/ms/0.7.0/package/package.json written
+909 silly install resolved [ { name: 'ms',
+909 silly install resolved     version: '0.7.0',
+909 silly install resolved     description: 'Tiny ms conversion utility',
+909 silly install resolved     repository: { type: 'git', url: 'git://github.com/guille/ms.js.git' },
+909 silly install resolved     main: './index',
+909 silly install resolved     devDependencies: { mocha: '*', 'expect.js': '*', serve: '*' },
+909 silly install resolved     component: { scripts: [Object] },
+909 silly install resolved     gitHead: '1e9cd9b05ef0dc26f765434d2bfee42394376e52',
+909 silly install resolved     bugs: { url: 'https://github.com/guille/ms.js/issues' },
+909 silly install resolved     homepage: 'https://github.com/guille/ms.js',
+909 silly install resolved     _id: 'ms@0.7.0',
+909 silly install resolved     scripts: {},
+909 silly install resolved     _shasum: '865be94c2e7397ad8a57da6a633a6e2f30798b83',
+909 silly install resolved     _from: 'ms@0.7.0',
+909 silly install resolved     _npmVersion: '1.4.21',
+909 silly install resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+909 silly install resolved     maintainers: [ [Object] ],
+909 silly install resolved     dist:
+909 silly install resolved      { shasum: '865be94c2e7397ad8a57da6a633a6e2f30798b83',
+909 silly install resolved        tarball: 'http://registry.npmjs.org/ms/-/ms-0.7.0.tgz' },
+909 silly install resolved     directories: {},
+909 silly install resolved     _resolved: 'https://registry.npmjs.org/ms/-/ms-0.7.0.tgz',
+909 silly install resolved     readme: 'ERROR: No README data found!' } ]
+910 info install ms@0.7.0 into /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug
+911 info installOne ms@0.7.0
+912 verbose installOne of ms to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug not in flight; installing
+913 verbose lock using /Users/davidjokinen/.npm/_locks/ms-21da44ccd1092065.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug/node_modules/ms
+914 silly install write writing ms 0.7.0 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug/node_modules/ms
+915 silly cache addNamed cb ms@0.7.0
+916 verbose unbuild node_modules/body-parser/node_modules/debug/node_modules/ms
+917 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug/node_modules/ms
+918 verbose tar unpack /Users/davidjokinen/.npm/ms/0.7.0/package.tgz
+919 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug/node_modules/ms
+920 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug/node_modules/ms
+921 silly gunzTarPerm modes [ '755', '644' ]
+922 silly gunzTarPerm extractEntry package.json
+923 silly gunzTarPerm extractEntry .npmignore
+924 silly gunzTarPerm extractEntry README.md
+925 silly gunzTarPerm extractEntry LICENSE
+926 silly gunzTarPerm extractEntry index.js
+927 info preinstall ms@0.7.0
+928 silly install resolved []
+929 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug/node_modules/ms
+930 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug/node_modules/ms
+931 verbose linkStuff [ false,
+931 verbose linkStuff   false,
+931 verbose linkStuff   false,
+931 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug/node_modules' ]
+932 info linkStuff ms@0.7.0
+933 verbose linkBins ms@0.7.0
+934 verbose linkMans ms@0.7.0
+935 verbose rebuildBundles ms@0.7.0
+936 info install ms@0.7.0
+937 info postinstall ms@0.7.0
+938 verbose unlock done using /Users/davidjokinen/.npm/_locks/ms-21da44ccd1092065.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug/node_modules/ms
+939 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug
+940 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug
+941 verbose linkStuff [ false,
+941 verbose linkStuff   false,
+941 verbose linkStuff   false,
+941 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules' ]
+942 info linkStuff debug@2.1.3
+943 verbose linkBins debug@2.1.3
+944 verbose linkMans debug@2.1.3
+945 verbose rebuildBundles debug@2.1.3
+946 verbose rebuildBundles [ 'ms' ]
+947 info install debug@2.1.3
+948 info postinstall debug@2.1.3
+949 verbose unlock done using /Users/davidjokinen/.npm/_locks/debug-bd80b2864c9dc85c.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/debug
+950 info preinstall iconv-lite@0.4.8
+951 silly install resolved []
+952 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/iconv-lite
+953 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/iconv-lite
+954 verbose linkStuff [ false,
+954 verbose linkStuff   false,
+954 verbose linkStuff   false,
+954 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules' ]
+955 info linkStuff iconv-lite@0.4.8
+956 verbose linkBins iconv-lite@0.4.8
+957 verbose linkMans iconv-lite@0.4.8
+958 verbose rebuildBundles iconv-lite@0.4.8
+959 info install iconv-lite@0.4.8
+960 info postinstall iconv-lite@0.4.8
+961 verbose unlock done using /Users/davidjokinen/.npm/_locks/iconv-lite-8a6e14b087402f4b.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/iconv-lite
+962 http 304 https://registry.npmjs.org/mime-db
+963 silly get cb [ 304,
+963 silly get   { date: 'Thu, 07 May 2015 18:25:30 GMT',
+963 silly get     via: '1.1 varnish',
+963 silly get     'cache-control': 'max-age=60',
+963 silly get     etag: '"61752PNUU8H18LDTM75KS4ZEE"',
+963 silly get     age: '1',
+963 silly get     connection: 'keep-alive',
+963 silly get     'x-served-by': 'cache-iad2137-IAD',
+963 silly get     'x-cache': 'HIT',
+963 silly get     'x-cache-hits': '1',
+963 silly get     'x-timer': 'S1431023130.080601,VS0,VE0',
+963 silly get     vary: 'Accept' } ]
+964 verbose etag https://registry.npmjs.org/mime-db from cache
+965 verbose get saving mime-db to /Users/davidjokinen/.npm/registry.npmjs.org/mime-db/.cache.json
+966 silly addNameRange number 2 { name: 'mime-db', range: '>=1.9.1 <1.10.0', hasData: true }
+967 silly addNameRange versions [ 'mime-db',
+967 silly addNameRange   [ '0.0.0',
+967 silly addNameRange     '1.0.0',
+967 silly addNameRange     '1.0.1',
+967 silly addNameRange     '1.0.2',
+967 silly addNameRange     '1.0.3',
+967 silly addNameRange     '1.1.0',
+967 silly addNameRange     '1.1.1',
+967 silly addNameRange     '1.1.2',
+967 silly addNameRange     '1.2.0',
+967 silly addNameRange     '1.3.0',
+967 silly addNameRange     '1.3.1',
+967 silly addNameRange     '1.4.0',
+967 silly addNameRange     '1.5.0',
+967 silly addNameRange     '1.6.0',
+967 silly addNameRange     '1.6.1',
+967 silly addNameRange     '1.7.0',
+967 silly addNameRange     '1.8.0',
+967 silly addNameRange     '1.9.0',
+967 silly addNameRange     '1.9.1' ] ]
+968 verbose addNamed mime-db@1.9.1
+969 silly addNamed semver.valid 1.9.1
+970 silly addNamed semver.validRange 1.9.1
+971 silly cache afterAdd mime-db@1.9.1
+972 verbose afterAdd /Users/davidjokinen/.npm/mime-db/1.9.1/package/package.json not in flight; writing
+973 verbose afterAdd /Users/davidjokinen/.npm/mime-db/1.9.1/package/package.json written
+974 silly install resolved [ { name: 'mime-db',
+974 silly install resolved     description: 'Media Type Database',
+974 silly install resolved     version: '1.9.1',
+974 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+974 silly install resolved     license: 'MIT',
+974 silly install resolved     keywords: [ 'mime', 'db', 'type', 'types', 'database', 'charset', 'charsets' ],
+974 silly install resolved     repository: { type: 'git', url: 'https://github.com/jshttp/mime-db' },
+974 silly install resolved     devDependencies:
+974 silly install resolved      { bluebird: '~2.9.20',
+974 silly install resolved        co: '4.5.1',
+974 silly install resolved        cogent: '1',
+974 silly install resolved        'csv-parse': '0.1.0',
+974 silly install resolved        gnode: '0.1.1',
+974 silly install resolved        istanbul: '0.3.8',
+974 silly install resolved        mocha: '~1.21.4',
+974 silly install resolved        'raw-body': '~1.3.3',
+974 silly install resolved        'stream-to-array': '2' },
+974 silly install resolved     files: [ 'HISTORY.md', 'LICENSE', 'README.md', 'db.json', 'index.js' ],
+974 silly install resolved     engines: { node: '>= 0.6' },
+974 silly install resolved     scripts:
+974 silly install resolved      { build: 'node scripts/build',
+974 silly install resolved        fetch: 'gnode scripts/extensions && gnode scripts/types',
+974 silly install resolved        test: 'mocha --reporter spec --bail --check-leaks test/',
+974 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+974 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/',
+974 silly install resolved        update: 'npm run fetch && npm run build' },
+974 silly install resolved     gitHead: '590a8b6afceeee64b424fcd2d0d73a3bebc81685',
+974 silly install resolved     bugs: { url: 'https://github.com/jshttp/mime-db/issues' },
+974 silly install resolved     homepage: 'https://github.com/jshttp/mime-db',
+974 silly install resolved     _id: 'mime-db@1.9.1',
+974 silly install resolved     _shasum: '1431049a71791482c29f37bafc8ea2cb3a6dd3e8',
+974 silly install resolved     _from: 'mime-db@>=1.9.1 <1.10.0',
+974 silly install resolved     _npmVersion: '1.4.28',
+974 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+974 silly install resolved     maintainers: [ [Object], [Object] ],
+974 silly install resolved     dist:
+974 silly install resolved      { shasum: '1431049a71791482c29f37bafc8ea2cb3a6dd3e8',
+974 silly install resolved        tarball: 'http://registry.npmjs.org/mime-db/-/mime-db-1.9.1.tgz' },
+974 silly install resolved     directories: {},
+974 silly install resolved     _resolved: 'https://registry.npmjs.org/mime-db/-/mime-db-1.9.1.tgz',
+974 silly install resolved     readme: 'ERROR: No README data found!' } ]
+975 info install mime-db@1.9.1 into /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types
+976 info installOne mime-db@1.9.1
+977 verbose installOne of mime-db to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types not in flight; installing
+978 verbose lock using /Users/davidjokinen/.npm/_locks/mime-db-34830a0fb027b8ae.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db
+979 silly install write writing mime-db 1.9.1 to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db
+980 silly cache addNamed cb mime-db@1.9.1
+981 verbose unbuild node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db
+982 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db
+983 verbose tar unpack /Users/davidjokinen/.npm/mime-db/1.9.1/package.tgz
+984 verbose tar unpacking to /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db
+985 verbose gentlyRm vacuuming /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db
+986 silly gunzTarPerm modes [ '755', '644' ]
+987 silly gunzTarPerm extractEntry package.json
+988 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+989 silly gunzTarPerm extractEntry README.md
+990 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+991 silly gunzTarPerm extractEntry LICENSE
+992 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+993 silly gunzTarPerm extractEntry index.js
+994 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+995 silly gunzTarPerm extractEntry HISTORY.md
+996 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+997 silly gunzTarPerm extractEntry db.json
+998 silly gunzTarPerm modified mode [ 'db.json', 438, 420 ]
+999 info preinstall mime-db@1.9.1
+1000 silly install resolved []
+1001 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db
+1002 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db
+1003 verbose linkStuff [ false,
+1003 verbose linkStuff   false,
+1003 verbose linkStuff   false,
+1003 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules' ]
+1004 info linkStuff mime-db@1.9.1
+1005 verbose linkBins mime-db@1.9.1
+1006 verbose linkMans mime-db@1.9.1
+1007 verbose rebuildBundles mime-db@1.9.1
+1008 info install mime-db@1.9.1
+1009 info postinstall mime-db@1.9.1
+1010 verbose unlock done using /Users/davidjokinen/.npm/_locks/mime-db-34830a0fb027b8ae.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db
+1011 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types
+1012 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types
+1013 verbose linkStuff [ false,
+1013 verbose linkStuff   false,
+1013 verbose linkStuff   false,
+1013 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules' ]
+1014 info linkStuff mime-types@2.0.11
+1015 verbose linkBins mime-types@2.0.11
+1016 verbose linkMans mime-types@2.0.11
+1017 verbose rebuildBundles mime-types@2.0.11
+1018 verbose rebuildBundles [ 'mime-db' ]
+1019 info install mime-types@2.0.11
+1020 info postinstall mime-types@2.0.11
+1021 verbose unlock done using /Users/davidjokinen/.npm/_locks/mime-types-c6239a26c2207c21.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is/node_modules/mime-types
+1022 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is
+1023 info build /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is
+1024 verbose linkStuff [ false,
+1024 verbose linkStuff   false,
+1024 verbose linkStuff   false,
+1024 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules' ]
+1025 info linkStuff type-is@1.6.1
+1026 verbose linkBins type-is@1.6.1
+1027 verbose linkMans type-is@1.6.1
+1028 verbose rebuildBundles type-is@1.6.1
+1029 verbose rebuildBundles [ 'media-typer', 'mime-types' ]
+1030 info install type-is@1.6.1
+1031 info postinstall type-is@1.6.1
+1032 verbose unlock done using /Users/davidjokinen/.npm/_locks/type-is-d95a60d54d3e8fb7.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser/node_modules/type-is
+1033 verbose about to build /Users/davidjokinen/FTP/game/node_modules/body-parser
+1034 info build /Users/davidjokinen/FTP/game/node_modules/body-parser
+1035 verbose linkStuff [ false,
+1035 verbose linkStuff   false,
+1035 verbose linkStuff   false,
+1035 verbose linkStuff   '/Users/davidjokinen/FTP/game/node_modules' ]
+1036 info linkStuff body-parser@1.12.3
+1037 verbose linkBins body-parser@1.12.3
+1038 verbose linkMans body-parser@1.12.3
+1039 verbose rebuildBundles body-parser@1.12.3
+1040 verbose rebuildBundles [ 'bytes',
+1040 verbose rebuildBundles   'content-type',
+1040 verbose rebuildBundles   'debug',
+1040 verbose rebuildBundles   'depd',
+1040 verbose rebuildBundles   'iconv-lite',
+1040 verbose rebuildBundles   'on-finished',
+1040 verbose rebuildBundles   'qs',
+1040 verbose rebuildBundles   'raw-body',
+1040 verbose rebuildBundles   'type-is' ]
+1041 info install body-parser@1.12.3
+1042 info postinstall body-parser@1.12.3
+1043 verbose unlock done using /Users/davidjokinen/.npm/_locks/body-parser-770063bc6320785b.lock for /Users/davidjokinen/FTP/game/node_modules/body-parser
+1044 verbose stack Error: The package mongoose does not satisfy its siblings' peerDependencies requirements!
+1044 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:103:32
+1044 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:225:5
+1044 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+1044 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+1044 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1044 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+1044 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1044 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+1044 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1044 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+1045 verbose cwd /Users/davidjokinen/FTP/game
+1046 error Darwin 14.1.0
+1047 error argv "node" "/usr/local/bin/npm" "install" "body-parser"
+1048 error node v0.12.0
+1049 error npm  v2.5.1
+1050 error code EPEERINVALID
+1051 error peerinvalid The package mongoose does not satisfy its siblings' peerDependencies requirements!
+1051 error peerinvalid Peer node-restful@0.1.18 wants mongoose@~3
+1052 verbose exit [ 1, true ]
