@@ -75,19 +75,24 @@ var Health = Component.extend({
 
 		if(com && com.ID == gd.userManager.userID){
 			var user1 = gd.userManager.getUser();
-			ctx.fillStyle="#000";
-			//ctx.font = parseInt(20*gd.camera.scale)+'px silkscreennormal';
-			//ctx.fillText(user1.info.xp,parseInt(20*gd.camera.scale),parseInt(30*gd.camera.scale));
+			var graphics = gd.graphics;
+			
+			//graphics.clear();
+			//ctx.fillStyle="rgb(240,"+n+","+n+")";
+			graphics.beginFill(0xCCCCCC);
+			//graphics
 
-			ctx.fillStyle="gray";
-			ctx.fillRect(parseInt(40*gd.camera.scale), parseInt(10*gd.camera.scale),parseInt(300*gd.camera.scale),parseInt(10*gd.camera.scale));
-			ctx.fillStyle="red";
-			ctx.fillRect(parseInt(40*gd.camera.scale), parseInt(8*gd.camera.scale),parseInt(p*300*gd.camera.scale),parseInt(14*gd.camera.scale));
+			graphics.drawRect(parseInt(40*gd.camera.scale), parseInt(10*gd.camera.scale),parseInt(300*gd.camera.scale),parseInt(10*gd.camera.scale));
+			graphics.beginFill(0xFF8888);
+			graphics.drawRect(parseInt(40*gd.camera.scale), parseInt(8*gd.camera.scale),parseInt(p*300*gd.camera.scale),parseInt(14*gd.camera.scale));
 
-			ctx.fillStyle="gray";
-			ctx.fillRect(parseInt(20*gd.camera.scale), parseInt(30*gd.camera.scale),parseInt(200*gd.camera.scale),parseInt(10*gd.camera.scale));
-			ctx.fillStyle="green";
-			ctx.fillRect(parseInt(20*gd.camera.scale), parseInt(28*gd.camera.scale),parseInt(p2*200*gd.camera.scale),parseInt(14*gd.camera.scale));
+			graphics.beginFill(0xCCCCCC);
+			graphics.drawRect(parseInt(20*gd.camera.scale), parseInt(30*gd.camera.scale),parseInt(200*gd.camera.scale),parseInt(10*gd.camera.scale));
+			graphics.beginFill(0x88FF88);
+			graphics.drawRect(parseInt(20*gd.camera.scale), parseInt(28*gd.camera.scale),parseInt(p2*200*gd.camera.scale),parseInt(14*gd.camera.scale));
+			
+			
+			
 		} else {
 			//ctx.fillStyle="red";
 			//ctx.fillRect((parseInt(this.PARENT.posX-20))*c.scale-c.x, (parseInt(this.PARENT.posY+size/2))*c.scale-c.y+30,size*c.scale,size*.2*c.scale);

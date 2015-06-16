@@ -19,7 +19,7 @@ var Bullet = Component.extend({
 	},
 	update: function (gd, delta){
 		if(gd.type == 0){//
-			this.count++;
+			this.count++; 
 			if(this.count>3)
 			this.PARENT.updateJSON =0;
 			if(this.timer > 0){
@@ -34,18 +34,30 @@ var Bullet = Component.extend({
 		}
 		else if(gd.type == 1){//
 			this.timer -= delta;
+			//console.log(delta);
 		}
 	},
 	render: function (gd,screen){
 		
 		var ctx = screen.ctx;
 		var c = gd.camera;
-		var color = parseInt(180+50*(1-(1.0*this.timer/this.timerMax)));
-		ctx.strokeStyle="rgb("+color+","+color+","+240+")";
-		ctx.beginPath();
-		ctx.moveTo(parseInt(this.x1*c.scale-c.x), parseInt(this.y1*c.scale-c.y));
-		ctx.lineTo(parseInt(this.x2*c.scale-c.x), parseInt(this.y2*c.scale-c.y));
-		ctx.stroke();
+		var color =.5*(1-(1.0*this.timer/this.timerMax))+.5;
+		//console.log(this.timer +" "+this.timerMax);
+		//graphics.moveTo
+		//ctx.strokeStyle="rgb("+color+","+color+","+240+")";
+		
+		var graphics = gd.graphics;
+		
+			
+		
+		graphics.beginFill(0xc8c8c8 , 1);
+		graphics.lineStyle(2,PIXI.utils.rgb2hex([color,color,color]), 1);
+		//graphics.beginPath();
+		graphics.moveTo(parseInt(this.x1*c.scale-c.x), parseInt(this.y1*c.scale-c.y));
+		graphics.lineTo(parseInt(this.x2*c.scale-c.x), parseInt(this.y2*c.scale-c.y));
+		graphics.endFill();
+		graphics.lineStyle();
+		//ctx.stroke();
 	},
 	read: function (packet){
 		var d = packet[3];

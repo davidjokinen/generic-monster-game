@@ -67,9 +67,16 @@ var DefaultAI = Component.extend({
 		}
 	},
 	render: function (gd,screen){
+		if(1)return;
+		var graphics = new PIXI.Graphics();
+			var c = gd.camera;
+		graphics.beginFill(0xFF8888);
+		graphics.drawRect(this.PARENT.posX-c.x, this.PARENT.posY-c.y,40,40);
+		gd.stage.addChild(graphics);
+		if(1)return;
 		var size = this.size;
 		var ctx = screen.ctx;
-		var c = gd.camera;
+	
 		ctx.strokeStyle="#DDF";
 		ctx.beginPath();
 		var len = this.trail.length/2;

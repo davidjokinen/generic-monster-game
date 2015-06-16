@@ -42,16 +42,22 @@ var Blood = Component.extend({
 		}
 	},
 	render: function (gd,screen){
+		//if(1)return;
 		if(this.time<0)return;
 		var size = this.size;
-		var ctx = screen.ctx;
+		//var ctx = screen.ctx;
 		var c = gd.camera;
 		//var p = 1.0*this.health/this.maxHealth;
 		var n = parseInt(240.0*(1-(this.time/10000.0)));
-		ctx.fillStyle="rgb(240,"+n+","+n+")";
+		var graphics =  gd.graphics;
+		//ctx.fillStyle="rgb(240,"+n+","+n+")";
+		graphics.beginFill(240+256 *n+ 65536 *n);
+				//ctx.fillStyle='#e0e0f0';
+				//graphics.drawRect( parseInt(x*box-c.x%(box)), parseInt(y*box-c.y%(box)), box, box );
 		for(var i =0;i<this.listY.length;i++){
-			ctx.fillRect(parseInt((parseInt(this.listX[i]-this.size/2))*c.scale-c.x), parseInt((parseInt(this.listY[i]-this.size/2))*c.scale-c.y+30),parseInt(size*c.scale),parseInt(size*c.scale));
+			graphics.drawRect(parseInt((parseInt(this.listX[i]-this.size/2))*c.scale-c.x), parseInt((parseInt(this.listY[i]-this.size/2))*c.scale-c.y+30),parseInt(size*c.scale),parseInt(size*c.scale));
 		}
+		//gd.stage.addChild(graphics);
 		//ctx.fillStyle="green";
 		//ctx.fillRect((parseInt(this.PARENT.posX-20))*c.scale-c.x, (parseInt(this.PARENT.posY+size/2))*c.scale-c.y+30,p*size*c.scale,size*.2*c.scale);
 		

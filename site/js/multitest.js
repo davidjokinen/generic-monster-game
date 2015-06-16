@@ -13,7 +13,7 @@ var MultiTest = Scene.extend({
 		
 		var list = gd.entities;
 		if(gd.type == 0){//
-			if(this.count  > 30 && list.length < 10){
+			if(this.count  > 30 && list.length < 0){
 				this.count = 0;
 				var e = new Entity(gd.idCount++,Math.random()*400,Math.random()*400,0);
 				e.add(new DefaultAI(e));
@@ -78,11 +78,49 @@ var MultiTest = Scene.extend({
 	
 	render: function (gd,screen) {
 		
-		
-		var ctx = screen.ctx;
-		ctx.fillStyle='rgb(240, 240, 255)';
+		//var graphics = new PIXI.Graphics();
+ 
+		// begin a green fill..
+		//graphics.beginFill(0xf0f0ff);
+		 
+		// draw a triangle using lines
+		//graphics.moveTo(0,0);
+		//graphics.lineTo(gd.renderer.width, 0);
+		//graphics.lineTo(gd.renderer.width, gd.renderer.height);
+		//graphics.lineTo(0, gd.renderer.height);
+		 
+		// end the fill
+		//graphics.endFill();
+		if(gd.stage == [][0]){
+			gd.stage =new PIXI.Container;
+			gd.graphics = new PIXI.Graphics();
+			gd.stage.addChild(gd.graphics);
+			PIXI.SCALE_MODES.DEFAULT = PIXI.SCALE_MODES.NEAREST;
+			gd.stage.roundPixelsboolean = true;
+		} 
+		gd.graphics.clear();
+		//else gd.stage.removeChildren();
+
+		//gd.stage.addChild(graphics);
+		//gd.renderer.render(graphics);
+
+		//graphics.render(stage, null, false);
+		//var ctx = screen.ctx;
+		//ctx.fillStyle='rgb(240, 240, 255)';
 		//if( !(gd.glitch))
-		gd.map.render(gd,screen);
+		var box = parseInt(200*gd.camera.scale);
+		var c = gd.camera;
+		for(var x =-2;x<=gd.renderer.width/box+2;x++){
+			for(var y =-2;y<=gd.renderer.height/box+2;y++){
+				if(((x+y-parseInt(c.y/(box))-parseInt(c.x/(box))))%2==0)gd.graphics.beginFill(0xf0f0ff );//ctx.fillStyle='#f0f0ff';
+				else gd.graphics.beginFill(0xe0e0f0 );
+				//ctx.fillStyle='#e0e0f0';
+				gd.graphics.drawRect( parseInt(x*box-c.x%(box)), parseInt(y*box-c.y%(box)), box, box );
+
+
+			}
+		}
+		
 		//ctx.fillRect( 0, 0, ctx.width, ctx.height );
 		/*
 		var c = gd.camera;
@@ -112,9 +150,9 @@ var MultiTest = Scene.extend({
 		}
 		ctx.stroke();
 		*/
-		ctx.strokeStyle="rgb(255, 110, 110)";
+		//ctx.strokeStyle="rgb(255, 110, 110)";
 		//ctx.strokeRect(0-c.x,0-c.y,3000,2100);
-		
+		gd.map.render(gd,screen);
 		var list = gd.localEntities;
 		for(var i =0;i<list.length;i++){
 			list[i].render(gd,screen);
@@ -123,6 +161,12 @@ var MultiTest = Scene.extend({
 		for(var i =0;i<list.length;i++){
 			list[i].render(gd,screen);
 		}
+	
+		gd.renderer.render(gd.stage);
+		if(1)return;
+		
+
+		
 		if(!document.hasFocus()){
 			ctx.fillStyle='rgba(0, 0, 0, .4)';
 		//	ctx.fillRect( 0, 0, ctx.width, ctx.height );

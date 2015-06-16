@@ -96,7 +96,7 @@ var Entity = Class.extend({
 					//var t1 = -time-gd.fakeLag+gd.serverDelta;
 					//var t2 = -time-gd.fakeLag+gd.serverDelta;
 					//if(!this.last) this.last = this.store[i];
-					var p = ((gd.fakeLag-(time-this.store[i][0]+gd.serverDelta)))/21.0;
+					var p = ((gd.fakeLag-(time-this.store[i][0]+gd.serverDelta)))/20.0;
 					
 					var pi = 1-p;
 					//console.log(pi);

@@ -82,16 +82,16 @@ var DefaultHuman = Component.extend({
 			this.moving = 0;
 			if(input){
 				if(health && health.stamina > 3 && input.shift){
+					if(input.up)this.PARENT.velY -= 500;
+					if(input.down)this.PARENT.velY += 500;
+					if(input.right)this.PARENT.velX += 500;
+					if(input.left)this.PARENT.velX -= 500;
+					health.stamina-=3;
+				} else {
 					if(input.up)this.PARENT.velY -= 400;
 					if(input.down)this.PARENT.velY += 400;
 					if(input.right)this.PARENT.velX += 400;
 					if(input.left)this.PARENT.velX -= 400;
-					health.stamina-=3;
-				} else {
-					if(input.up)this.PARENT.velY -= 300;
-					if(input.down)this.PARENT.velY += 300;
-					if(input.right)this.PARENT.velX += 300;
-					if(input.left)this.PARENT.velX -= 300;
 				}
 				if(input.up + input.down + input.right + input.left > 1){
 					this.PARENT.velY /= 1.214213562;
@@ -130,6 +130,14 @@ var DefaultHuman = Component.extend({
 		}
 	},
 	render: function (gd,screen){
+		
+		var graphics = gd.graphics;
+			var c = gd.camera;
+		
+		graphics.beginFill(0x88FF88);
+		graphics.drawRect(this.PARENT.posX-c.x-10, this.PARENT.posY-c.y-10,40,40);
+		
+		if(1)return;
 		var size = this.size;
 		var ctx = screen.ctx;
 		var c = gd.camera;

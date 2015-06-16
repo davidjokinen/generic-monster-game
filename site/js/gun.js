@@ -26,7 +26,7 @@ var Gun = Item.extend({
 		this.status = 0;
 	},
 	name: function (){
-		return this.name;
+		return this.name; 
 	},
 	action1: function (gd,screen){
 		if(this.timer > 0)return;
@@ -231,24 +231,43 @@ var Gun = Item.extend({
 	},
 	render: function (gd,screen){
 		var size = this.size;
-		var ctx = screen.ctx;
+	//	var ctx = screen.ctx;
 		var c = gd.camera;
-		
+		//if(1)return;
 		if(this.timer>100){
 			var p = (.9999*this.timer/this.timerStart);
-			ctx.fillStyle="#CCC";
-			ctx.beginPath()
-			ctx.arc((parseInt(this.PARENT.posX+10))*c.scale-c.x, (parseInt(this.PARENT.posY+10))*c.scale-c.y,50,0,Math.PI*2*p, false); // outer (filled)
-			ctx.arc((parseInt(this.PARENT.posX+10))*c.scale-c.x, (parseInt(this.PARENT.posY+10))*c.scale-c.y,32,Math.PI*2*p,Math.PI*2, true); // inner (unfills it)
-			ctx.fill();
+			var graphics = gd.graphics;
+			graphics.fillStyle="#CCCCCC";
+			graphics.beginFill(0xCCCCCC);
+
+			graphics.arc((this.PARENT.posX+10)*c.scale-c.x, (parseInt(this.PARENT.posY+10))*c.scale-c.y,50,0,Math.PI*2*p-.05, false); // outer (filled)
+			graphics.arc((this.PARENT.posX+10)*c.scale-c.x, (parseInt(this.PARENT.posY+10))*c.scale-c.y,32,Math.PI*2*p,Math.PI*2, true); // inner (unfills it)
+			graphics.endFill();
 		}
 		var com = this.PARENT.get("DefaultHuman");
 		if(com) 
 		if(com.ID == gd.userManager.userID){
-			ctx.fillStyle="#000";
-			ctx.font =  parseInt(20*gd.camera.scale)+'px code_pro_demoregular';//silkscreennormal';
-			ctx.fillText(this.title,ctx.width-parseInt(200*gd.camera.scale),ctx.height-parseInt(50*gd.camera.scale));
-			ctx.fillText(this.clip+" : "+this.ammo,ctx.width-parseInt(200*gd.camera.scale),ctx.height-parseInt(30*gd.camera.scale));
+			//ctx.fillStyle="#000000";
+			//ctx.font =  ;//silkscreennormal';
+			if(this.basicText1 == [][0]){
+				this.basicText1 = new PIXI.Text(this.title,{font: parseInt(20*gd.camera.scale)+'px code_pro_demoregular'});
+				gd.stage.addChild(this.basicText1);
+			}
+			if(this.basicText2 == [][0]){
+				this.basicText2 = new PIXI.Text(this.clip+" : "+this.ammo,{font: parseInt(20*gd.camera.scale)+'px code_pro_demoregular'});
+				gd.stage.addChild(this.basicText2);
+			}
+			this.basicText1.text = this.title;
+			this.basicText1.x = gd.renderer.width-parseInt(200*gd.camera.scale);
+			this.basicText1.y = gd.renderer.height-parseInt(50*gd.camera.scale);
+
+			this.basicText2.text = this.clip+" : "+this.ammo;
+			this.basicText2.x = gd.renderer.width-parseInt(200*gd.camera.scale);
+			this.basicText2.y = gd.renderer.height-parseInt(30*gd.camera.scale);
+			
+			
+			//ctx.fillText(this.title,,);
+			//ctx.fillText(this.clip+" : "+this.ammo,,);
 		}
 	},
 	read: function (packet){

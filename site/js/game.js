@@ -5,7 +5,9 @@ window.onload=function(){
 	var canvas = document.getElementById("gameScreen1");
 	//var canvas2 = document.getElementById("gameScreen2");
 	//var canvas3 = document.getElementById("gameScreen3");
-	var screen = new Screen('100%', '100%', canvas, canvas,canvas);  
+	//var screen = new Screen('100%', '100%', canvas, canvas,canvas); 
+	var renderer = new PIXI.WebGLRenderer(window.innerWidth, window.innerHeight);
+	document.body.appendChild(renderer.view); 
 	var scene = new MultiTest(screen, scene);
 	var gamedata = new GameData(1);
 	var userManager = new UserManager();
@@ -16,7 +18,7 @@ window.onload=function(){
 	window.addEventListener('mousedown',  function(e){input.clickDown(e);}, false);
 	window.addEventListener('mouseup',  function(e){input.clickUp(e);}, false);
 	gamedata.userManager = userManager;
-	gamedata.screen = screen;
+	gamedata.renderer = renderer;
 	gamedata.input = input;
 	socket.on('sync', function (json) {
 	      //gamedata.sync(JSON.parse(json));
@@ -61,8 +63,9 @@ window.onload=function(){
 
 	function update(){
 		var now = Date.now(),
-		delta = now - (time | now);
+		delta = now - time;
 		time = now;
+		
 		input.update(gamedata,delta);
 		gamedata.camera.update(gamedata,delta);
 		var curInput = input.send();

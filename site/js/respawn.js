@@ -11,6 +11,8 @@ var Respawn = Component.extend({
 	dying: function(gd){
 		if(gd.type == 0){//server 
 		
+		} else {
+			gd.stage.removeChild(this.basicText);
 		}
 	},
 	update: function (gd, delta){
@@ -61,15 +63,25 @@ var Respawn = Component.extend({
 	render: function (gd,screen){
 		if(this.show == 0)return;
 		var size = this.size;
-		var ctx = screen.ctx;
+		//var ctx = screen.ctx;
 		var c = gd.camera;
-		ctx.fillStyle="#000";
-		ctx.font=parseInt(60*gd.camera.scale)+"px code_pro_demoregular";
+		//ctx.fillStyle="#000";
+		//ctx.font=parseInt(60*gd.camera.scale)+"px code_pro_demoregular";
 		var time = this.count/1000+1;
 		var text = "Respawning in: "+parseInt(time);
-		var w = (ctx.width - ctx.measureText(text).width)/2;
-		ctx.fillText(text,w,ctx.height/2);
-		ctx.font="10px sans-serif";
+		if(this.basicText == [][0]){
+			this.basicText = new PIXI.Text(text,{font: parseInt(60*gd.camera.scale)+"px code_pro_demoregular"});
+			gd.stage.addChild(this.basicText);
+		}
+		else
+			this.basicText.text = text;
+		var w = (gd.renderer.width - this.basicText.width)/2;
+		
+		this.basicText.x = w;
+		this.basicText.y = gd.renderer.height/2;
+		
+		//ctx.fillText(text,w,ctx.height/2);
+		//ctx.font="10px sans-serif";
 	},
 	read: function (packet){
 		var d = packet[3];

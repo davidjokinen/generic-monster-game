@@ -47,7 +47,7 @@ var Lava = Component.extend({
 	},
 	render: function (gd,screen){
 		var size = this.size;
-		var ctx = screen.ctx;
+		//var ctx = screen.ctx;
 		var c = gd.camera;
 		
 		var x1 = parseInt((parseInt(this.PARENT.posX))*c.scale-c.x);
@@ -60,13 +60,17 @@ var Lava = Component.extend({
 		if(x2<0)x2=0;
 		if(y1<0)y1=0;
 		if(y2<0)y2=0;
-		if(x1>ctx.width)x1=ctx.width;
-		if(x2>ctx.width)x2=ctx.width;
-		if(y1>ctx.height)y1=ctx.height;
-		if(y2>ctx.height)y2=ctx.height;
+		if(x1>gd.renderer.width)x1=gd.renderer.width;
+		if(x2>gd.renderer.width)x2=gd.renderer.width;
+		if(y1>gd.renderer.height)y1=gd.renderer.height;
+		if(y2>gd.renderer.height)y2=gd.renderer.height;
 
-		ctx.fillStyle="#E88";
-		ctx.fillRect(x1,y1,x2-x1,y2-y1);
+		var graphics = new PIXI.Graphics();
+		graphics.beginFill(0xEE8888);
+		graphics.drawRect(x1,y1,x2-x1,y2-y1)
+		gd.stage.addChild(graphics);
+		//ctx.fillStyle="#E88";
+		//ctx.fillRect(x1,y1,x2-x1,y2-y1);
 	},
 	read: function (packet){
 		var d = packet[3];

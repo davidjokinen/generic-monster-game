@@ -117,16 +117,16 @@ function loop(){
 }
 
 var e = new Entity(gamedata.idCount++,-2000,-2000);
-e.add(new Lava(e,6000,1805));
+//e.add(new Lava(e,6000,1805));
 gamedata.entities.push(e);
 e = new Entity(gamedata.idCount++,4000,-2000);
-e.add(new Lava(e,1800,5000));
+//e.add(new Lava(e,1800,5000));
 gamedata.entities.push(e);
 e = new Entity(gamedata.idCount++,-2000,-200);
-e.add(new Lava(e,1800,5000));
+//e.add(new Lava(e,1800,5000));
 gamedata.entities.push(e);
 e = new Entity(gamedata.idCount++,-2000,4000);
-e.add(new Lava(e,8000,1800));
+//e.add(new Lava(e,8000,1800));
 gamedata.entities.push(e);
 //var loopID = setInterval(loop, 30);
 console.log("loop started");

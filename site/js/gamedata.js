@@ -8,7 +8,9 @@ var GameData = Class.extend({
 		this.input;
 		this.screen;
 		this.map = new MyMap();
-
+		this.stage;
+		this.graphics;
+		
 		this.rayVsCircle;
 		this.boxIntersect;
 		this.Line ;
