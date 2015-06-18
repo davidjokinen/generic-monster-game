@@ -1,6 +1,6 @@
 
 window.onload=function(){
-	var socket = io.connect('ws://localhost:8080/');
+	var socket = io.connect('ws://genericmonstergame.com/');
   
 	var canvas = document.getElementById("gameScreen1");
 	//var canvas2 = document.getElementById("gameScreen2");

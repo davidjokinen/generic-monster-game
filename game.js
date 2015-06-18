@@ -8,30 +8,30 @@ function include(f) {
   eval.apply(global, [read(f)]);
 }
 console.log("starting...");
-include('./site/js/Base.js');
-include('./site/js/Scene.js');
-include('./site/js/GameData.js');
-include('./site/js/Entity.js');
-include('./site/js/Camera.js');
-include('./site/js/MultiTest.js');
-include('./site/js/Packet.js');
-include('./site/js/Component.js');
-include('./site/js/ItemController.js');
-include('./site/js/Item.js');
-include('./site/js/Health.js');
-include('./site/js/MyMap.js');
-include('./site/js/Gun.js');
-include('./site/js/Shotgun.js');
-include('./site/js/Handgun.js');
-include('./site/js/Machinegun.js');
-include('./site/js/Bullet.js');
-include('./site/js/DefaultAI.js');
-include('./site/js/Respawn.js');
-include('./site/js/Lava.js')
-include('./site/js/DefaultHuman.js');
-include('./site/js/UserManager.js');
-include('./site/js/User.js');
-include('./site/js/InputController.js');
+include('./site/js/base.js');
+include('./site/js/scene.js');
+include('./site/js/gamedata.js');
+include('./site/js/entity.js');
+include('./site/js/camera.js');
+include('./site/js/multitest.js');
+include('./site/js/packet.js');
+include('./site/js/component.js');
+include('./site/js/itemcontroller.js');
+include('./site/js/item.js');
+include('./site/js/health.js');
+include('./site/js/mymap.js');
+include('./site/js/gun.js');
+include('./site/js/shotgun.js');
+include('./site/js/handgun.js');
+include('./site/js/machinegun.js');
+include('./site/js/bullet.js');
+include('./site/js/defaultai.js');
+include('./site/js/respawn.js');
+include('./site/js/lava.js')
+include('./site/js/defaulthuman.js');
+include('./site/js/usermanager.js');
+include('./site/js/user.js');
+include('./site/js/inputcontroller.js');
 //include('./site/js/Base.js');
 console.log("loaded my javascript.");
 
@@ -57,7 +57,7 @@ router.get('/', function(req, res) {
 
 app.use(serveStatic('./site')); 
 
-var server = app.listen(8080);
+var server = app.listen(80);
 console.log("listening");
 var io = require('socket.io').listen(server);
 //var users  = [];

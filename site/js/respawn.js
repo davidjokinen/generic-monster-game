@@ -3,7 +3,7 @@ var Respawn = Component.extend({
 		this.name = "Respawn";
 		this.PARENT = PARENT ;
 		this.ID = ID;
-		this.count = 3000;
+		this.count = 100;
 		this.done = 0;
 		this.show = 0;
 		this.status = 0;
@@ -61,6 +61,7 @@ var Respawn = Component.extend({
 		}
 	},
 	render: function (gd,screen){
+		if(1)return;
 		if(this.show == 0)return;
 		var size = this.size;
 		//var ctx = screen.ctx;

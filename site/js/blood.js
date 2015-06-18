@@ -4,16 +4,30 @@ var Blood = Component.extend({
 		this.PARENT = PARENT;
 		this.dR = dR;
 		this.time = 10000;
-		var size = 22;
+		var size = 200;
+		this.notAdded = true;
+		this.list= new Array(size);
 		this.listX = new Array(size);
 		this.listY = new Array(size);
 		this.listdR = new Array(size);
 		this.listP = new Array(size);
-		for(var i =0;i<this.listY.length;i++){
-			this.listX[i] = this.PARENT.posX;
-			this.listY[i] = this.PARENT.posY;
-			this.listdR[i] = 30*Math.random()-15;
-			this.listP[i] = 6*Math.random();
+		var graph = new PIXI.Graphics();
+		
+		graph.beginFill(0xFF3300);
+		graph.drawRect(0,0,4,4);
+		graph.endFill();
+		graph.boundsPadding = 0;
+		//this.texture = new PIXI.RenderTexture(gd.renderer,2, 2);
+		this.listOBlood = new PIXI.ParticleContainer(size);
+		this.listOBlood.roundPixelsboolean = true;
+		
+		for(var i =0;i<size;i++){
+			this.list[i] = new PIXI.Sprite(graph.generateTexture());
+			this.list[i].position.x = this.PARENT.posX;
+			this.list[i].position.y = this.PARENT.posY;
+			this.listdR[i] = 50*Math.random()-25;
+			this.listP[i] = 20*Math.random()*Math.random();
+			this.listOBlood.addChild(this.list[i]);
 		}
 		this.size = 5;
 
@@ -34,8 +48,8 @@ var Blood = Component.extend({
 				var dX = 5*Math.cos((this.listdR[i]+this.dR)*Math.PI/180);
 				var dY = 5*Math.sin((this.listdR[i]+this.dR)*Math.PI/180);
 
-				this.listX[i] += dX*this.listP[i];
-				this.listY[i] += dY*this.listP[i];
+				this.list[i].position.x += dX*this.listP[i];
+				this.list[i].position.y += dY*this.listP[i];
 				this.listP[i] *= .86;
 			}
 			
@@ -43,23 +57,20 @@ var Blood = Component.extend({
 	},
 	render: function (gd,screen){
 		//if(1)return;
-		if(this.time<0)return;
-		var size = this.size;
-		//var ctx = screen.ctx;
-		var c = gd.camera;
-		//var p = 1.0*this.health/this.maxHealth;
-		var n = parseInt(240.0*(1-(this.time/10000.0)));
-		var graphics =  gd.graphics;
-		//ctx.fillStyle="rgb(240,"+n+","+n+")";
-		graphics.beginFill(240+256 *n+ 65536 *n);
-				//ctx.fillStyle='#e0e0f0';
-				//graphics.drawRect( parseInt(x*box-c.x%(box)), parseInt(y*box-c.y%(box)), box, box );
-		for(var i =0;i<this.listY.length;i++){
-			graphics.drawRect(parseInt((parseInt(this.listX[i]-this.size/2))*c.scale-c.x), parseInt((parseInt(this.listY[i]-this.size/2))*c.scale-c.y+30),parseInt(size*c.scale),parseInt(size*c.scale));
+		if(this.time<0){
+			gd.stage.removeChild(this.listOBlood);
+			//this.listOBlood.destory();
+			return;
 		}
-		//gd.stage.addChild(graphics);
-		//ctx.fillStyle="green";
-		//ctx.fillRect((parseInt(this.PARENT.posX-20))*c.scale-c.x, (parseInt(this.PARENT.posY+size/2))*c.scale-c.y+30,p*size*c.scale,size*.2*c.scale);
+		var size = this.size;
+		if(this.notAdded){
+			gd.stage.addChild(this.listOBlood);
+			this.notAdded = false;
+		}
+		var c = gd.camera;
+		this.listOBlood.position.x = -c.x;
+		this.listOBlood.position.y = -c.y;
+		this.listOBlood.alpha = ((this.time/10000.0));
 		
 	},
 	read: function (packet){

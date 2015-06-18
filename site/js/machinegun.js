@@ -14,7 +14,7 @@ var Machinegun = Gun.extend({
 		this.spread = 6;
 		this.distance = 1500;
 		this.distanceSpread = 100;
-		this.damage = 30;
+		this.damage = 3;
 
 		this.shotTime = 30;
 		this.reloadTime = 2000;
